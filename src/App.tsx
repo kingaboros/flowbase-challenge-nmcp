@@ -1,5 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
+
+import Header from './Components/Header/Header';
+import Navbar from './Components/Navbar/Navbar';
+
 import './App.scss';
 
 function App() {
@@ -7,15 +11,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>hello from App</h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar />
+        <Header />
       </header>
     </div>
   );
