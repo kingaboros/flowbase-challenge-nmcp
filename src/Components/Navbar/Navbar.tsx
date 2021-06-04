@@ -1,14 +1,12 @@
 import React from 'react';
-
+import logo from '../../Images/logo.svg';
 import './Navbar.scss';
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
+      <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
+        <img src={logo} className="App-logo" alt="logo" />
         <button
           className="navbar-toggler"
           type="button"
@@ -24,22 +22,22 @@ const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item active">
               <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
+                Nav Link <span className="sr-only"></span>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Features
+                Nav Link
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Pricing
+                Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="#">
-                Disabled
+              <a className="nav-link" href="#">
+                Nav Link
               </a>
             </li>
           </ul>
