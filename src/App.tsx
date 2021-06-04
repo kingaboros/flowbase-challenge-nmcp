@@ -7,7 +7,7 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="container-fluid">
         <Header />
       </div>
     </div>

@@ -6,10 +6,10 @@ import './Navbar.scss';
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div className="container">
+      <nav className="navbar navbar-expand-lg navbar-light bg-transparent d-flex justify-content-between">
         <img src={logo} className="App-logo" alt="logo" />
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -19,8 +19,11 @@ const Navbar = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        </button> */}
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
             <li className="nav-item active">
               <a className="nav-link navbar-link" href="#">
