@@ -1,5 +1,7 @@
 import React from 'react';
+import { FaLongArrowAltRight } from 'react-icons/fa';
 import logo from '../../Images/logo.svg';
+
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -38,6 +40,11 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="#">
                 Nav Link
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link navbar_button" href="#">
+                Working with us <FaLongArrowAltRight />
               </a>
             </li>
           </ul>

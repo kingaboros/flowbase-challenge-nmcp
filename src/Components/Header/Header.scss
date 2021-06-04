@@ -1,0 +1,14 @@
+.header__overlay {
+  background: linear-gradient(
+    198.73deg,
+    rgba(0, 0, 0, 0.0001) 15.31%,
+    rgba(0, 0, 0, 0.837986) 67.37%
+  );
+}
+.header {
+  background: url('../../Images/header-image.png');
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
