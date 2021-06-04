@@ -1,8 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import './Navbar.scss';
 
-const Navbar = () => {
+import logo from '../../Images/logo.svg';
+import './NavBar.scss';
+
+const NavBar = () => {
   return (
     <div className="navbar">
       <div>
@@ -34,11 +35,14 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <button> Work with us </button>
+          <a href="" className="navbar__list__link">
+            {' '}
+            Work with us{' '}
+          </a>
         </li>
       </ul>
     </div>
   );
 };
 
-export default Navbar;
+export default NavBar;

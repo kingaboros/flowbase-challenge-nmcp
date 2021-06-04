@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Header from './Components/Header/Header';
-import Navbar from './Components/Navbar/Navbar';
+import NavBar from './Components/NavBar/NavBar';
 
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <NavBar />
       <Header />
     </div>
   );
