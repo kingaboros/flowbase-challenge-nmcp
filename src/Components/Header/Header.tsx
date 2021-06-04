@@ -5,7 +5,7 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <div className="header header__overlay">
+    <div className="header">
       <Navbar />
       <div className="header__heading-wrapper">
         <h2 className="header__heading">Beautiful homes made for you</h2>

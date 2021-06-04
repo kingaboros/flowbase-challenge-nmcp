@@ -23,8 +23,8 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Nav Link <span className="sr-only"></span>
+              <a className="nav-link navbar-link" href="#">
+                Nav Link
               </a>
             </li>
             <li className="nav-item">

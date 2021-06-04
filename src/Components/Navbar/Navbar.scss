@@ -1,11 +1,15 @@
 .navbar-nav {
   justify-content: flex-end;
+  padding: 20px;
 }
-.nav-link {
-  display: black;
-  justify-content: flex-end;
+.nav-item:active {
+  color: #fff;
 }
 
 .navbar_button {
   color: #000;
+}
+
+.navbar-link {
+  color: #fff;
 }
