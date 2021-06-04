@@ -5,6 +5,7 @@ import './Header.scss';
 const Header = () => {
   return (
     <div>
+      <img src={logo} className="App-logo" alt="logo" />
       <h2>Beautiful homes made for you</h2>
       <p>
         In oculis quidem se esse admonere interesse enim maxime placeat, facere
