@@ -2,19 +2,20 @@ $primary-color: #000;
 $accent-color: #ffac12;
 $text-color: #666666;
 
+.App-logo {
+  padding: 30px 127px;
+}
 .navbar-wrapper,
 .navbar {
   margin: 0;
 }
 
-.App-logo {
-  padding: 30px 127px;
-}
 .navbar-nav {
   display: flex;
   justify-content: space-between;
   padding: 30px 150px;
   line-height: 40px;
+  margin-right: 33px;
 }
 
 .nav-item {
