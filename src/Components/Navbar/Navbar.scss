@@ -1,16 +1,38 @@
+$primary-color: #000;
+$accent-color: #ffac12;
+$text-color: #666666;
+
+.navbar-wrapper,
+.navbar {
+  margin: 0;
+}
+
+.App-logo {
+  padding: 30px 127px;
+}
 .navbar-nav {
   display: flex;
-  justify-content: flex-end;
-  padding: 20px;
-}
-.nav-item:active {
-  color: #fff;
+  justify-content: space-between;
+  padding: 30px 150px;
+  line-height: 40px;
 }
 
+.nav-item {
+  color: #fff;
+  font-weight: 400;
+  width: 130px;
+}
 .navbar_button {
-  color: #000;
-}
+  color: $primary-color;
+  font-weight: 500;
+  background-color: $accent-color;
+  border-radius: 0 20px 0 0;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 200px;
+  padding: 10px 20px 10px;
 
-.navbar-link {
-  color: #fff;
+  .button-arrow {
+    color: #fff;
+  }
 }

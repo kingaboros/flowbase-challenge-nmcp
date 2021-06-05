@@ -1,3 +1,15 @@
+// breakpoints for screen sizes:
+
+.header,
+.header__overlay {
+  background-size: cover;
+  height: 100vh;
+}
+
+.header {
+  background-image: url('../../Images/header-image.png');
+}
+
 .header__overlay {
   background: linear-gradient(
     198.73deg,
@@ -5,24 +17,13 @@
     rgba(0, 0, 0, 0.837986) 67.37%
   );
 }
-.header {
-  background-image: url('../../Images/header-image.png');
-  // background: linear-gradient(
-  //   198.73deg,
-  //   rgba(0, 0, 0, 0.0001) 15.31%,
-  //   rgba(0, 0, 0, 0.837986) 67.37%
-  // );
-
-  background-size: cover;
-  height: 100vh;
-}
 .header__heading-wrapper {
   color: #fff;
+  padding: 100px 140px 0;
 }
 .header__heading {
-  font-size: 80px;
-  padding-top: 50px;
-  padding-right: 500px;
+  font-size: 60px;
+  padding-right: 700px;
 }
 
 .header__heading-description {
