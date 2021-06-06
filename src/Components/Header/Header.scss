@@ -1,15 +1,32 @@
-.header {
-  background: url('..//../Images/header-image.png');
+.header,
+.header__overlay {
   background-size: cover;
-
-  margin: 0px;
   height: 100vh;
-  width: 100vw;
-  padding: 0px;
 }
 
-.header__heading {
+.header {
+  background-image: url('../../Images/header-image.png');
+}
+
+.header__overlay {
+  background: linear-gradient(
+    198.73deg,
+    rgba(0, 0, 0, 0.0001) 15.31%,
+    rgba(0, 0, 0, 0.837986) 67.37%
+  );
+}
+.header__heading-wrapper {
   color: #fff;
+  padding: 100px 140px 200px;
+}
+.header__heading {
   font-size: 80px;
-  padding: 200px 650px 20px 185px;
+  letter-spacing: 2px;
+  padding-right: 800px;
+}
+
+.header__heading-description {
+  font-size: 20px;
+  padding-right: 700px;
+  font-weight: 200;
 }

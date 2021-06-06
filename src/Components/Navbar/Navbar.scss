@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $primary-color: black;
 $accent-color: #ffac12;
 $heading-color: black;
@@ -34,4 +35,44 @@ $text-color: #666666;
 
 .navbar__list__link:hover {
   color: $accent-color;
+=======
+$primary-color: #000;
+$accent-color: #ffac12;
+$text-color: #666666;
+
+.App-logo {
+  padding: 30px 127px;
+}
+.navbar-wrapper,
+.navbar {
+  margin: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 150px;
+  line-height: 40px;
+  margin-right: 33px;
+}
+
+.nav-item {
+  color: #fff;
+  font-weight: 400;
+  width: 130px;
+}
+.navbar_button {
+  color: $primary-color;
+  font-weight: 500;
+  background-color: $accent-color;
+  border-radius: 0 20px 0 0;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 200px;
+  padding: 10px 20px 10px;
+
+  .button-arrow {
+    color: #fff;
+  }
+>>>>>>> header-component
 }
