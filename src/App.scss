@@ -1,3 +1,5 @@
+@import './Breakpoints/breakpoints.scss';
+
 * {
   font-family: Inter, sans-serif;
   box-sizing: border-box;
@@ -8,4 +10,9 @@
 }
 .container-fluid {
   padding: 0;
+}
+
+.App-layer {
+  @include media('>=tablet') {
+  }
 }
