@@ -8,8 +8,8 @@ import './GoodHands.scss';
 const GoodHands = () => {
   return (
     <div className="good-hands__wrapper">
-      <div class="container-fluid">
-        <div class="row good-hands__img">
+      <div className="container-fluid">
+        <div className="row good-hands__img">
           <div className="col-md-6">
             <img src={img} alt="people speaking with agent" />
           </div>
