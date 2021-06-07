@@ -8,7 +8,7 @@ import './App.scss';
 function App() {
   return (
     <div className="App-layer">
-      <div className="container-fluid">
+      <div className="container-fluid col-sm-lg">
         <Header />
         <GoodHands />
       </div>
