@@ -26,27 +26,30 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link navbar-link" href="#">
+              <a className="nav-link navbar-link text-white" href="#">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link text-white" href="#">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link text-white" href="#">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link text-white" href="#">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link navbar_button button-text" href="#">
+              <a
+                className="nav-link navbar_button button-text font-weight-bolder text-dark"
+                href="#"
+              >
                 Working with us <FaLongArrowAltRight className="button-arrow" />
               </a>
             </li>
