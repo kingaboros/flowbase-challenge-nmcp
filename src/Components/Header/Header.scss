@@ -15,7 +15,6 @@
     rgba(0, 0, 0, 0.0001) 15.31%,
     rgba(0, 0, 0, 0.837986) 67.37%
   );
-  width: auto;
 }
 .header__heading-wrapper {
   color: #fff;
@@ -34,8 +33,30 @@
   margin: 10px 300px 0 139px;
 }
 
+@media only screen and (max-width: 768px) {
+  .header .header-overlay {
+    width: 100vw;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .header .header-overlay {
-    width: 100%;
+    width: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__heading {
+    width: auto;
+    font-size: 50px;
+    line-height: 60px;
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__heading__description {
+    width: auto;
+    margin-left: 60px;
   }
 }

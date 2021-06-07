@@ -8,13 +8,17 @@ import './GoodHands.scss';
 const GoodHands = () => {
   return (
     <div className="good-hands__wrapper">
-      <div className="container-fluid">
-        <div className="row good-hands__img">
-          <div className="col-md-6">
-            <img src={img} alt="people speaking with agent" />
+      <div className="container-fluid col-12">
+        <div className="row">
+          <div className="col-md-6 col-12">
+            <img
+              src={img}
+              alt="people speaking with agent"
+              className="good-hands__img"
+            />
           </div>
 
-          <div className="col-md-6 good-hands__text">
+          <div className="col-md-6 col-12 good-hands__text">
             <HorizontalLine />
             <div className="good-hands__title">You're in good hands</div>
             <p className="good-hands__description">

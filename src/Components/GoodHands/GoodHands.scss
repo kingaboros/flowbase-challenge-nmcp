@@ -7,16 +7,13 @@ $text-color: #666666;
   display: flex;
   flex-direction: column;
 }
-
-.good-hands__text {
-  margin-top: 100px;
-  margin-left: -50px;
+.good-hands__img {
+  width: 100%;
+  height: auto;
 }
-
-@media only screen and (min-width: 1306px) {
-  .good-hands__text {
-    padding: 5px;
-  }
+.good-hands__text {
+  margin-top: 80px;
+  margin-left: -20px;
 }
 
 .good-hands__title {
@@ -44,5 +41,13 @@ $text-color: #666666;
     color: $accent-color;
     padding-left: 5px;
     font-size: 30px;
+  }
+}
+
+// Responsive css
+
+@media only screen and (min-width: 1306px) {
+  .good-hands__text {
+    padding: 5px;
   }
 }

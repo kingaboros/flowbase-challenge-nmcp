@@ -5,15 +5,13 @@ import GoodHands from './Components/GoodHands/GoodHands';
 
 import './App.scss';
 
-function App() {
+const App = () => {
   return (
     <div className="App-layer">
-      <div className="container-fluid col-sm-lg">
-        <Header />
-        <GoodHands />
-      </div>
+      <Header />
+      <GoodHands />
     </div>
   );
-}
+};
 
 export default App;

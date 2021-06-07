@@ -16,13 +16,12 @@ $text-color: #666666;
   justify-content: space-between;
   padding: 30px 150px;
   line-height: 40px;
-  margin-right: 33px;
+  margin-left: 240;
+  margin-right: 10px;
 }
 
 .nav-item {
-  color: #fff;
-  font-weight: 400;
-  width: 130px;
+  width: 140px;
 }
 .navbar_button {
   color: $primary-color;
@@ -38,6 +37,59 @@ $text-color: #666666;
     color: #fff;
   }
 }
+@media only screen and (max-width: 425px) {
+  .App-logo {
+    padding: 10px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .App-logo {
+    padding: 15px;
+    margin: 2px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    padding: 0;
+    font-size: 14px;
+    padding-top: 10px;
+    margin-left: 1px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-link {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-button {
+    padding: 10px;
+    max-width: 10px;
+    padding: 10px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .App-logo {
+    width: auto;
+    margin: 0;
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-item {
+    width: 100px;
+    padding-top: 10px;
+    margin-right: -2px;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .navbar {
@@ -47,9 +99,23 @@ $text-color: #666666;
 }
 
 @media only screen and (max-width: 1024px) {
+  .navbar-nav {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 1306) {
   .App-logo {
     width: auto;
-    padding: 40px;
-    margin: 10px;
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1306) {
+  .navbar-nav {
+    width: auto;
+    margin-left: 0;
+    padding: 0;
   }
 }
