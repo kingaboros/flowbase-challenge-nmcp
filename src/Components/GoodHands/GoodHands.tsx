@@ -21,7 +21,13 @@ const GoodHands = () => {
           <div className="col-md-6 col-12 good-hands__text">
             <HorizontalLine />
             <div className="good-hands__title">You're in good hands</div>
-            <p className="good-hands__description"></p>
+            <p className="good-hands__description">
+              Torquatos nostros? quos dolores eos, qui dolorem ipsum per se
+              texit, ne ferae quidem se repellere, idque instituit docere sic:
+              omne animal, simul atque integre iudicante itaque aiunt hanc quasi
+              involuta aperiri, altera occulta quaedam et voluptatem accusantium
+              doloremque.
+            </p>
             <button className="btn btn-dark good-hands__button">
               Learn More{' '}
               <FaLongArrowAltRight className="good-hands__button__arrow" />

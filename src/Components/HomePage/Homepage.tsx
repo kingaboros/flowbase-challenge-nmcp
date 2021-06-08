@@ -1,4 +1,6 @@
 import React from 'react';
+import ArrowBtn from '../Global/ArrowBtn/ArrowBtn';
+import Heading from '../Global/Heading/Heading';
 import Paragraph from '../Global/Paragraph/Paragraph';
 import Header from '../Header/Header';
 import Listings from '../Listings/Listings';
@@ -8,7 +10,13 @@ const Homepage = () => {
     <div>
       <Header />
       <Listings />
+      <Heading title={`You're in good hands`} />
       <Paragraph />
+      <ArrowBtn
+        btnName={'Learn more'}
+        btnClass={'btn-dark' + ' ' + 'paragraph__button'}
+        arrowClass={'paragraph__button__arrow'}
+      />
     </div>
   );
 };

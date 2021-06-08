@@ -1,0 +1,15 @@
+$primary-color: #000;
+$accent-color: #ffac12;
+
+.paragraph__button {
+  background-color: #000;
+  padding: 20px 50px;
+  border-radius: 0 20px 0 0;
+  margin-top: 15px;
+
+  .paragraph__button__arrow {
+    color: $accent-color;
+    padding-left: 5px;
+    font-size: 30px;
+  }
+}

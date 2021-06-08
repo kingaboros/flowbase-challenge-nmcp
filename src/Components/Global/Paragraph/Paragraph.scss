@@ -1,6 +1,21 @@
-.good-hands__description {
+$primary-color: #000;
+$accent-color: #ffac12;
+$text-color: #666666;
+
+.paragraph__wrapper {
+  margin-top: 10px;
+}
+.paragraph__img {
+  width: 100%;
+  height: auto;
+  margin-top: -180px;
+}
+
+.paragraph__description {
+  color: $text-color;
   font-size: 18px;
-  padding: 10px 200px 0 0;
+  padding: 10px;
   margin-top: 10px;
   line-height: 35px;
+  margin-right: 200px;
 }
