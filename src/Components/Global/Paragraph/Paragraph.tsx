@@ -1,6 +1,5 @@
 import React from 'react';
-import GoodHands from '../../GoodHands/GoodHands';
-import Heading from '../Heading/Heading';
+import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
 import img from '../../../Images/Content-Image.png';
 import '../Paragraph/Paragraph.scss';
@@ -26,6 +25,11 @@ const Paragraph = () => {
               involuta aperiri, altera occulta quaedam et voluptatem accusantium
               doloremque.
             </p>
+            <ArrowBtn
+              btnName={'Learn more'}
+              btnClass={'btn-dark' + ' ' + 'paragraph__button'}
+              arrowClass={'paragraph__button__arrow'}
+            />
           </div>
         </div>
       </div>

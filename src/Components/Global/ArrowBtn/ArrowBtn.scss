@@ -2,7 +2,9 @@ $primary-color: #000;
 $accent-color: #ffac12;
 
 .paragraph__button {
-  background-color: #000;
+  font-size: 18px;
+  background-color: $primary-color;
+  margin-left: 12px;
   padding: 20px 50px;
   border-radius: 0 20px 0 0;
   margin-top: 15px;

@@ -12,11 +12,6 @@ const Homepage = () => {
       <Listings />
       <Heading title={`You're in good hands`} />
       <Paragraph />
-      <ArrowBtn
-        btnName={'Learn more'}
-        btnClass={'btn-dark' + ' ' + 'paragraph__button'}
-        arrowClass={'paragraph__button__arrow'}
-      />
     </div>
   );
 };
