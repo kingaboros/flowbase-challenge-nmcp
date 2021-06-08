@@ -1,15 +1,12 @@
 import React from 'react';
 
-import Header from './Components/Header/Header';
-import GoodHands from './Components/GoodHands/GoodHands';
-
 import './App.scss';
+import Homepage from './Components/HomePage/Homepage';
 
 const App = () => {
   return (
     <div className="App-layer">
-      <Header />
-      <GoodHands />
+      <Homepage />{' '}
     </div>
   );
 };
