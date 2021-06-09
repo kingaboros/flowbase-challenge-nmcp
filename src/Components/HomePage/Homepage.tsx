@@ -1,9 +1,9 @@
 import React from 'react';
-import ArrowBtn from '../ArrowBtn/ArrowBtn';
 import Heading from '../Heading/Heading';
 import Paragraph from '../Paragraph/Paragraph';
 import Header from '../Header/Header';
 import Listings from '../Listings/Listings';
+import FilterSection from '../FilterSection/FilterSection';
 
 const Homepage = () => {
   return (
@@ -12,6 +12,7 @@ const Homepage = () => {
       <Listings />
       <Heading title={`You're in good hands`} />
       <Paragraph />
+      <FilterSection />
     </div>
   );
 };
