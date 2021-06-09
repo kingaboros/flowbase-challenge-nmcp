@@ -1,5 +1,5 @@
 import React from 'react';
-import './HorizontalLine.scss';
+import '../HorizontalLine/HorizontalLine.scss';
 
 const HorizontalLine = () => {
   return <div className="horizontal-line"></div>;

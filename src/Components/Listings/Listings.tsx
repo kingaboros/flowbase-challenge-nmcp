@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowBtn from '../Global/ArrowBtn/ArrowBtn';
+import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
 import './Listings.scss';
 

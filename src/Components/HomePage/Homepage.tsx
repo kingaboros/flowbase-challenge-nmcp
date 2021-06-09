@@ -1,7 +1,7 @@
 import React from 'react';
-import ArrowBtn from '../Global/ArrowBtn/ArrowBtn';
-import Heading from '../Global/Heading/Heading';
-import Paragraph from '../Global/Paragraph/Paragraph';
+import ArrowBtn from '../ArrowBtn/ArrowBtn';
+import Heading from '../Heading/Heading';
+import Paragraph from '../Paragraph/Paragraph';
 import Header from '../Header/Header';
 import Listings from '../Listings/Listings';
 

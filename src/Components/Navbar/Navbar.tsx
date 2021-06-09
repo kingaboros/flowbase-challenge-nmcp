@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../Images/logo.svg';
-import ArrowBtn from '../Global/ArrowBtn/ArrowBtn';
+import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
 import './Navbar.scss';
 
@@ -60,7 +60,7 @@ const Navbar = () => {
                   ' ' +
                   'navbar_button'
                 }
-                arrowClass={'button-arrow'}
+                arrowClass={'white_arrow'}
               />
             </li>
           </ul>

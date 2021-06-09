@@ -1,5 +1,5 @@
 import React from 'react';
-import HorizontalLine from '../../HorizontalLine/HorizontalLine';
+import HorizontalLine from '../HorizontalLine/HorizontalLine';
 
 import './Heading.scss';
 
