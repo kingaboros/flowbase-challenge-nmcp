@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaLongArrowAltRight } from 'react-icons/fa';
 import logo from '../../Images/logo.svg';
+import ArrowBtn from '../Global/ArrowBtn/ArrowBtn';
 
 import './Navbar.scss';
 
@@ -43,12 +43,25 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link navbar_button button-text font-weight-bolder text-dark"
-                href="#"
-              >
-                Working with us <FaLongArrowAltRight className="button-arrow" />
-              </a>
+              <ArrowBtn
+                btnName={'Work with us'}
+                btnClass={
+                  'btn-warning' +
+                  ' ' +
+                  'nav-link' +
+                  ' ' +
+                  ' ' +
+                  'button-text' +
+                  ' ' +
+                  ' ' +
+                  'font-weight-bolder' +
+                  ' ' +
+                  'text-dark' +
+                  ' ' +
+                  'navbar_button'
+                }
+                arrowClass={'button-arrow'}
+              />
             </li>
           </ul>
         </div>

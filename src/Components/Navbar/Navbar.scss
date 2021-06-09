@@ -23,20 +23,20 @@ $text-color: #666666;
 .nav-item {
   width: 140px;
 }
-.navbar_button {
-  color: $primary-color;
-  font-weight: 500;
-  background-color: $accent-color;
-  border-radius: 0 20px 0 0;
-  margin-bottom: 10px;
-  text-align: center;
-  width: 200px;
-  padding: 10px 20px 10px;
+// .navbar_button {
+//   color: $primary-color;
+//   font-weight: 500;
+//   background-color: $accent-color;
+//   border-radius: 0 20px 0 0;
+//   margin-bottom: 10px;
+//   text-align: center;
+//   width: 200px;
+//   padding: 10px 20px 10px;
 
-  .button-arrow {
-    color: #fff;
-  }
-}
+//   .button-arrow {
+//     color: #fff;
+//   }
+// }
 @media only screen and (max-width: 425px) {
   .App-logo {
     padding: 10px;

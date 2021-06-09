@@ -28,7 +28,7 @@ const Paragraph = () => {
             <ArrowBtn
               btnName={'Learn more'}
               btnClass={'btn-dark' + ' ' + 'paragraph__button'}
-              arrowClass={'paragraph__button__arrow'}
+              arrowClass={'orange_arrow'}
             />
           </div>
         </div>
