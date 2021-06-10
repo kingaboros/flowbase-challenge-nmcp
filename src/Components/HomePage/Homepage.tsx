@@ -10,7 +10,6 @@ const Homepage = () => {
     <div>
       <Header />
       <Listings />
-      <Heading title={`You're in good hands`} />
       <Paragraph />
       <FilterSection />
     </div>

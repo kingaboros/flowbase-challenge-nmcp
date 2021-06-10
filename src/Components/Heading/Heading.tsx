@@ -8,8 +8,6 @@ const Heading = (props: any) => {
     <div className="heading__wrapper">
       <div className="container-fluid col-12">
         <div className="row">
-          <div className="col-md-6 col-12"></div>
-
           <div className="col-md-6 col-12 heading__text">
             <HorizontalLine />
             <div className="heading__title">{props.title}</div>
