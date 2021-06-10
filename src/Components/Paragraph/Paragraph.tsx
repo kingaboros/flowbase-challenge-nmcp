@@ -3,6 +3,7 @@ import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
 import img from '../../Images/Content-Image.png';
 import '../Paragraph/Paragraph.scss';
+import Heading from '../Heading/Heading';
 
 const Paragraph = () => {
   return (
@@ -18,6 +19,7 @@ const Paragraph = () => {
           </div>
 
           <div className="col-md-6 col-12 paragraph__description_wrapper">
+            <Heading title={`You're in good hands`} />
             <p className="paragraph__description">
               Torquatos nostros? quos dolores eos, qui dolorem ipsum per se
               texit, ne ferae quidem se repellere, idque instituit docere sic:
