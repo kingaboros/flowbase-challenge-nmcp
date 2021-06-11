@@ -9,6 +9,7 @@ const PropertyTypeFilter = (props: any) => {
       <div className="filter__control">
         <label>Property Type</label>
         <select value={props.selected} onChange={dropdownChangeHandler}>
+          <option value="blank">--------</option>
           <option value="house">House</option>
           <option value="flat">Flat</option>
           <option value="holiday home">Holiday Home</option>

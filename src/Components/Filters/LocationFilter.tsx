@@ -9,6 +9,7 @@ const LocationFilter = (props: any) => {
       <div className="filter__control">
         <label>Location</label>
         <select value={props.selected} onChange={dropdownChangeHandler}>
+          <option value="blank">--------</option>
           <option value="New York">New York</option>
           <option value="Michigan">Michigan</option>
           <option value="Las Vegas">Las Vegas</option>
