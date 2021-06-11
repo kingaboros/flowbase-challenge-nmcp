@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Heading from '../Heading/Heading';
+import Properties from '../Properties/Properties';
 
 import LookingForFilter from '../Filters/LookingForFilter';
 import LocationFilter from '../Filters/LocationFilter';
@@ -7,15 +8,19 @@ import PropertyTypeFilter from '../Filters/PropertyTypeFilter';
 import PriceFilter from '../Filters/PriceFilter';
 
 import '../FilterSection/FilterSection.scss';
-import { renderIntoDocument } from 'react-dom/test-utils';
+import house1 from '../../Images/house1.png';
+import house2 from '../../Images/house2.png';
+import house3 from '../../Images/house3.png';
+import house4 from '../../Images/house4.png';
+import house6 from '../../Images/house6.png';
 
 const properties = [
   {
     id: 1,
-    type: 'flat',
+    type: 'Flat',
     location: 'New York',
     title: 'Malto House',
-    image: 'house1',
+    image: house1,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -24,10 +29,10 @@ const properties = [
   },
   {
     id: 2,
-    type: 'house',
+    type: 'House',
     location: 'Las Vegas',
     title: 'Vegas House',
-    image: 'house2',
+    image: house2,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -36,10 +41,10 @@ const properties = [
   },
   {
     id: 3,
-    type: 'bungalow',
+    type: 'Bungalow',
     location: 'Michigan',
     title: 'Mich House',
-    image: 'house3',
+    image: house3,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -48,10 +53,10 @@ const properties = [
   },
   {
     id: 4,
-    type: 'flat',
+    type: 'Flat',
     location: 'New York',
     title: 'Mochi House',
-    image: 'house4',
+    image: house4,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -60,10 +65,10 @@ const properties = [
   },
   {
     id: 5,
-    type: 'flat',
+    type: 'Flat',
     location: 'Las Vegas',
     title: 'Mickey House',
-    image: 'house1',
+    image: house1,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -72,10 +77,10 @@ const properties = [
   },
   {
     id: 6,
-    type: 'holiday home',
+    type: 'Holiday Home',
     location: 'Michigan',
     title: 'Holiday House',
-    image: 'house6',
+    image: house6,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -85,28 +90,33 @@ const properties = [
 ];
 
 const FilterSection = (props: any) => {
-  const [lookingFor, setLookingFor] = useState(' ');
+  const [lookingFor, setLookingFor] = useState('Rent');
   const lookingForFilterHandler = (selectedLookingFor: any) => {
     setLookingFor(selectedLookingFor);
   };
 
-  const [location, setLocation] = useState(' ');
+  const [location, setLocation] = useState('');
   const locationFilterHandler = (selectedLocation: any) => {
     setLocation(selectedLocation);
   };
-  const [propertyType, setPropertyType] = useState(' ');
+  const [propertyType, setPropertyType] = useState('');
   const propertyTypeFilterHandler = (selectedPropertyType: any) => {
     setPropertyType(selectedPropertyType);
   };
-  const [price, setPrice] = useState(' ');
+  const [price, setPrice] = useState('');
   const priceFilterHandler = (selectedPrice: any) => {
     setPrice(selectedPrice);
   };
+
+  let filteredProperties = properties.filter((properties: any) => {
+    return properties.lookingFor === lookingFor;
+  });
+
   return (
-    <div className="filterSection__wrapper">
+    <div className="filter-section__wrapper">
       <Heading title={`Find your next place to live`} />
       <div className="container-fluid col-12 ">
-        <div className="filterSection__columns row ">
+        <div className="row filter-section__columns">
           <div className="col-3 col-xs-12 grey-border">
             <LookingForFilter
               selected={lookingFor}
@@ -127,6 +137,21 @@ const FilterSection = (props: any) => {
           </div>
           <div className="col-3 col-xs-12">
             <PriceFilter selected={price} onChangeFilter={priceFilterHandler} />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="filter-section__results">
+          <div className="row">
+            {filteredProperties.map((properties: any) => (
+              <Properties
+                image={properties.image}
+                title={properties.title}
+                bedrooms={properties.bedrooms}
+                bathrooms={properties.bathrooms}
+                symbol={properties.symbol}
+              />
+            ))}
           </div>
         </div>
       </div>

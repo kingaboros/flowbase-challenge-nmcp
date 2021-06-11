@@ -4,8 +4,9 @@ import Paragraph from '../Paragraph/Paragraph';
 import Header from '../Header/Header';
 import Listings from '../Listings/Listings';
 import FilterSection from '../FilterSection/FilterSection';
+import Properties from '../Properties/Properties';
 
-const Homepage = () => {
+const Homepage = (props: any) => {
   return (
     <div>
       <Header />

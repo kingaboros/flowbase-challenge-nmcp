@@ -9,7 +9,7 @@ const LookingForFilter = (props: any) => {
       <div className="filter__control">
         <label>Looking for</label>
         <select value={props.selected} onChange={dropdownChangeHandler}>
-          <option value="blank">--------</option>
+          <option value="blank">-------</option>
           <option value="buy">Buy</option>
           <option value="rent">Rent</option>
           <option value="let">Let</option>
