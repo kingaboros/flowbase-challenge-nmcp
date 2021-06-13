@@ -9,7 +9,7 @@ const Properties = (props: any) => {
       <img className="card-img-top image-shadow" src={props.image}></img>
       <div className="properties__description">
         <h2 className="card-title properties__title">{props.title}</h2>
-        <div className="row">
+        <div className="row properties__icons__row">
           <div className="col-4 properties__icons">
             <div className="row">
               <div className="col-6 properties__icons__values">
