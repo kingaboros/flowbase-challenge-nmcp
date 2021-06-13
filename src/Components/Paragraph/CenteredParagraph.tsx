@@ -8,7 +8,7 @@ import '../Paragraph/CenteredParagraph.scss';
 const CenteredParagraph = () => {
   return (
     <div className="container-fluid centered-paragraph__description_wrapper ">
-      <div className="row d-flex align-self-center">
+      <div className="row ">
         <div className="col-3"></div>
         <div className="col-5">
           <HorizontalLine
