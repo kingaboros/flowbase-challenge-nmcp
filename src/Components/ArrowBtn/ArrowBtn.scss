@@ -19,6 +19,7 @@ $accent-color: #ffac12;
   margin-bottom: 10px;
   width: 200px;
   padding: 10px;
+  font-weight: bold;
 }
 
 .listings_button {
@@ -30,6 +31,12 @@ $accent-color: #ffac12;
 .listings_button:hover {
   text-decoration: none;
   cursor: pointer;
+}
+
+.centered-paragraph__button {
+  padding: 20px;
+  margin-left: 180px;
+  align-items: center;
 }
 
 // Arrow

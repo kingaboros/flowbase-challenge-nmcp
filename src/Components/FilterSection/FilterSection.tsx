@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import HorizontalLine from '../HorizontalLine/HorizontalLine';
 import Heading from '../Heading/Heading';
 import Properties from '../Properties/Properties';
 
@@ -114,7 +115,11 @@ const FilterSection = (props: any) => {
 
   return (
     <div className="filter-section__wrapper">
-      <Heading title={`Find your next place to live`} />
+      <HorizontalLine lineStyle={'horizontal-line'} />
+      <Heading
+        headingStyle={'heading__title'}
+        title={`Find your next place to live`}
+      />
       <div className="container-fluid col-12 ">
         <div className="row filter-section__columns">
           <div className="col-3 col-xs-12 grey-border">

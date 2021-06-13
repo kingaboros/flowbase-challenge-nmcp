@@ -7,10 +7,9 @@ const Heading = (props: any) => {
   return (
     <div className="heading__wrapper">
       <div className="container-fluid col-12">
-        <div className="row">
+        <div className="row full-width">
           <div className="col-md-6 col-12 heading__text">
-            <HorizontalLine />
-            <div className="heading__title">{props.title}</div>
+            <div className={props.headingStyle}>{props.title}</div>
           </div>
         </div>
       </div>
