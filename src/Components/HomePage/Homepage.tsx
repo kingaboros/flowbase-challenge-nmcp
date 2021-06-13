@@ -5,6 +5,7 @@ import Listings from '../Listings/Listings';
 import FilterSection from '../FilterSection/FilterSection';
 import CenteredParagraph from '../Paragraph/CenteredParagraph';
 import Testimonials from '../Testimonials/Testimonials';
+import HorizontalLine from '../HorizontalLine/HorizontalLine';
 
 const Homepage = (props: any) => {
   return (

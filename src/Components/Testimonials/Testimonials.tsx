@@ -1,43 +1,36 @@
 import React from 'react';
+import HorizontalLine from '../HorizontalLine/HorizontalLine';
 
-import img1 from '../../Images/testimonial1.png';
 import TestimonialCard from './TestimonialCard';
 
 import './Testimonials.scss';
 
-const testimonials = [
-  {
-    name: 'Lara Madrigal',
-    role: 'client',
-    img: img1,
-    text: '“Certe, inquam, pertinax non existimant oportere exquisitis rationibus conquisitis de quo enim ipsam. Torquem detraxit hosti et quidem faciunt, ut aut.”',
-  },
-  {
-    name: 'John Simba',
-    role: 'client',
-    img: img1,
-    text: '“Certe, inquam, pertinax non existimant oportere exquisitis rationibus conquisitis de quo enim ipsam. Torquem detraxit hosti et quidem faciunt, ut aut.”',
-  },
-  {
-    name: 'Freya Adams',
-    role: 'client',
-    img: img1,
-    text: '“Certe, inquam, pertinax non existimant oportere exquisitis rationibus conquisitis de quo enim ipsam. Torquem detraxit hosti et quidem faciunt, ut aut.”',
-  },
-];
-
 const Testimonials = () => {
   return (
     <div className="container testimonials">
-      <div className="row">
-        {testimonials.map(testimonials => (
+      <div className="row"></div>
+
+      <div className="row ">
+        <div className="col-4">
           <TestimonialCard
-            name={testimonials.name}
-            role={testimonials.role}
-            img={testimonials.img}
-            text={testimonials.text}
+            textStyle={'testimonial-card__text'}
+            testimonialStyle={'col-8 testimonial-card__description'}
           />
-        ))}
+        </div>
+
+        <div className="col-4">
+          <HorizontalLine lineStyle={'horizontal-line'} />
+          <TestimonialCard
+            textStyle={'testimonial-card__active'}
+            testimonialStyle={'testimonial-card__black'}
+          />
+        </div>
+        <div className="col-4">
+          <TestimonialCard
+            textStyle={'testimonial-card__text'}
+            testimonialStyle={'col-8 testimonial-card__description'}
+          />
+        </div>
       </div>
     </div>
   );
