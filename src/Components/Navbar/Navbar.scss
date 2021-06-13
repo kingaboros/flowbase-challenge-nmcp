@@ -1,3 +1,41 @@
+<<<<<<< HEAD
+$primary-color: black;
+$accent-color: #ffac12;
+$heading-color: black;
+$text-color: #666666;
+
+.navbar {
+  height: 0;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  z-index: 10;
+}
+
+.navbar__list {
+  list-style-type: none;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  height: 50px;
+}
+
+.navbar__list__link {
+  text-decoration: none;
+  // color: #fff;
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+.navbar__list__link:hover {
+  color: $accent-color;
+=======
 $primary-color: #000;
 $accent-color: #ffac12;
 $text-color: #666666;
@@ -118,4 +156,5 @@ $text-color: #666666;
     margin-left: 0;
     padding: 0;
   }
+>>>>>>> header-component
 }

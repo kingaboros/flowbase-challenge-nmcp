@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../../Images/logo.svg';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
+import logo from '../../Images/logo.svg';
 import './Navbar.scss';
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <div className="navbar-wrapper">
       <nav className="navbar navbar-expand-md navbar-light bg-transparent d-flex justify-content-between">
@@ -70,4 +70,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
