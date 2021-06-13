@@ -6,6 +6,7 @@ import FilterSection from '../FilterSection/FilterSection';
 import CenteredParagraph from '../Paragraph/CenteredParagraph';
 import Testimonials from '../Testimonials/Testimonials';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';
+import Footer from '../Footer/Footer';
 
 const Homepage = (props: any) => {
   return (
@@ -41,6 +42,7 @@ const Homepage = (props: any) => {
       />
       <CenteredParagraph />
       <Testimonials />
+      <Footer />
     </div>
   );
 };
