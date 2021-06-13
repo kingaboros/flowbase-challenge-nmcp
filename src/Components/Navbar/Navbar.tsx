@@ -1,52 +1,13 @@
 import React from 'react';
-import { FaLongArrowAltRight } from 'react-icons/fa';
-import logo from '../../Images/logo.svg';
+import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
 import logo from '../../Images/logo.svg';
-import './NavBar.scss';
+import './Navbar.scss';
 
 const NavBar = () => {
   return (
-<<<<<<< HEAD
-    <div className="navbar">
-      <div>
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
-      <ul className="navbar__list">
-        <li className="navbar__list__item">
-          <a href="" className="navbar__list__link">
-            {' '}
-            Nav Link{' '}
-          </a>
-        </li>
-        <li>
-          <a href="" className="navbar__list__link">
-            {' '}
-            Nav Link{' '}
-          </a>
-        </li>
-        <li>
-          <a href="" className="navbar__list__link">
-            {' '}
-            Nav Link{' '}
-          </a>
-        </li>
-        <li>
-          <a href="" className="navbar__list__link">
-            {' '}
-            Nav Link{' '}
-          </a>
-        </li>
-        <li>
-          <a href="" className="navbar__list__link">
-            {' '}
-            Work with us{' '}
-          </a>
-        </li>
-      </ul>
-=======
     <div className="navbar-wrapper">
-      <nav className="navbar navbar-expand-lg navbar-light bg-transparent d-flex justify-content-between">
+      <nav className="navbar navbar-expand-md navbar-light bg-transparent d-flex justify-content-between">
         <img src={logo} className="App-logo" alt="logo" />
         <button
           className="navbar-toggler"
@@ -59,40 +20,52 @@ const NavBar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div
-          className="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
+        <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link navbar-link" href="#">
+              <a className="nav-link navbar-link text-white" href="#">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link navbar-link text-white" href="#">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link navbar-link text-white" href="#">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link navbar-link text-white" href="#">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link navbar_button button-text" href="#">
-                Working with us <FaLongArrowAltRight className="button-arrow" />
-              </a>
+              <ArrowBtn
+                btnName={'Work with us'}
+                btnClass={
+                  'btn-warning' +
+                  ' ' +
+                  'nav-link' +
+                  ' ' +
+                  ' ' +
+                  'button-text' +
+                  ' ' +
+                  ' ' +
+                  'font-weight-bolder' +
+                  ' ' +
+                  'text-dark' +
+                  ' ' +
+                  'navbar_button'
+                }
+                arrowClass={'white_arrow'}
+              />
             </li>
           </ul>
         </div>
       </nav>
->>>>>>> header-component
     </div>
   );
 };

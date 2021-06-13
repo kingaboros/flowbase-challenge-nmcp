@@ -1,17 +1,14 @@
 import React from 'react';
 
-import Header from './Components/Header/Header';
-
 import './App.scss';
+import Homepage from './Components/HomePage/Homepage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <div className="container-fluid">
-        <Header />
-      </div>
+    <div className="App-layer">
+      <Homepage />{' '}
     </div>
   );
-}
+};
 
 export default App;

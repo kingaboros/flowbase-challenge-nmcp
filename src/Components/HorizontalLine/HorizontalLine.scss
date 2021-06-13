@@ -1,0 +1,16 @@
+$primary-color: #000;
+$accent-color: #ffac12;
+
+.horizontal-line {
+  border-top-style: solid;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $accent-color, $primary-color) 1;
+  padding-top: 20px;
+  max-width: 200px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.horizontal-line-center {
+  margin-left: 219px;
+}

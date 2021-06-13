@@ -2,6 +2,7 @@
 .header__overlay {
   background-size: cover;
   height: 100vh;
+  width: 100vw;
 }
 
 .header {
@@ -17,16 +18,45 @@
 }
 .header__heading-wrapper {
   color: #fff;
-  padding: 100px 140px 200px;
+  padding: 10px 125px 150px;
+  margin-bottom: 0px;
 }
 .header__heading {
+  margin: 150px 0 0 10px;
+  line-height: 80px;
   font-size: 80px;
-  letter-spacing: 2px;
-  padding-right: 800px;
+  letter-spacing: 1px;
 }
 
 .header__heading-description {
   font-size: 20px;
-  padding-right: 700px;
   font-weight: 200;
+  margin: 10px 10px 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .header-overlay {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header .header-overlay {
+    width: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__heading {
+    width: auto;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__heading__description {
+    width: auto;
+    margin: 20px;
+  }
 }
