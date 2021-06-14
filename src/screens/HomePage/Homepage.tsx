@@ -1,12 +1,11 @@
 import React from 'react';
-import Paragraph from '../Paragraph/Paragraph';
-import Header from '../Header/Header';
-import Listings from '../Listings/Listings';
-import FilterSection from '../FilterSection/FilterSection';
-import CenteredParagraph from '../Paragraph/CenteredParagraph';
-import Testimonials from '../Testimonials/Testimonials';
-import HorizontalLine from '../HorizontalLine/HorizontalLine';
-import Footer from '../Footer/Footer';
+import Paragraph from '../../Components/Paragraph/Paragraph';
+import Header from '../../Components/Header/Header';
+import Listings from '../../Components/Listings/Listings';
+import FilterSection from '../../Components/FilterSection/FilterSection';
+import CenteredParagraph from '../../Components/Paragraph/CenteredParagraph';
+import Testimonials from '../../Components/Testimonials/Testimonials';
+import Footer from '../../Components/Footer/Footer';
 
 const Homepage = (props: any) => {
   return (
