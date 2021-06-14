@@ -21,3 +21,9 @@ $text-color: #666666;
 .nav-item {
   width: 140px;
 }
+
+@media screen {
+  .navbar-nav {
+    width: auto;
+  }
+}

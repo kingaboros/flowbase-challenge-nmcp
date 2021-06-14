@@ -9,13 +9,8 @@ import PropertyTypeFilter from '../Filters/PropertyTypeFilter';
 import PriceFilter from '../Filters/PriceFilter';
 
 import '../FilterSection/FilterSection.scss';
-import house1 from '../../Images/house1.png';
-import house2 from '../../Images/house2.png';
-import house3 from '../../Images/house3.png';
-import house4 from '../../Images/house4.png';
-import house6 from '../../Images/house6.png';
 
-// import images from '../../themes/images';
+import images from '../../themes/images';
 
 const properties = [
   {
@@ -23,7 +18,7 @@ const properties = [
     type: 'Flat',
     location: 'New York',
     title: 'Malto House',
-    image: house1,
+    image: images.house1,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -35,7 +30,7 @@ const properties = [
     type: 'House',
     location: 'Las Vegas',
     title: 'Vegas House',
-    image: house2,
+    image: images.house2,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -47,7 +42,7 @@ const properties = [
     type: 'Bungalow',
     location: 'Michigan',
     title: 'Mich House',
-    image: house3,
+    image: images.house3,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -59,7 +54,7 @@ const properties = [
     type: 'Flat',
     location: 'New York',
     title: 'Mochi House',
-    image: house4,
+    image: images.house4,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -71,7 +66,7 @@ const properties = [
     type: 'Flat',
     location: 'Las Vegas',
     title: 'Mickey House',
-    image: house1,
+    image: images.house1,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
@@ -83,7 +78,7 @@ const properties = [
     type: 'Holiday Home',
     location: 'Michigan',
     title: 'Holiday House',
-    image: house6,
+    image: images.house6,
     bedrooms: 4,
     bathrooms: 2,
     symbol: 2,
