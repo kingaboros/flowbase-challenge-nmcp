@@ -91,7 +91,7 @@ const properties = [
 ];
 
 const FilterSection = (props: any) => {
-  const [lookingFor, setLookingFor] = useState('Rent');
+  const [lookingFor, setLookingFor] = useState('All');
   const lookingForFilterHandler = (selectedLookingFor: any) => {
     setLookingFor(selectedLookingFor);
   };
@@ -110,7 +110,7 @@ const FilterSection = (props: any) => {
   };
 
   let filteredProperties = properties.filter((properties: any) => {
-    return properties.lookingFor === lookingFor;
+    return properties.lookingFor === lookingFor || lookingFor === 'all';
   });
 
   return (
