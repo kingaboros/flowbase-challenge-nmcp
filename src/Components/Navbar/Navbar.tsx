@@ -6,24 +6,20 @@ import './Navbar.scss';
 
 const NavBar = () => {
   return (
-    <div className="navbar-wrapper">
-      <nav className="navbar navbar-expand-md navbar-light bg-transparent d-flex justify-content-between">
+    <nav className="navbar navbar-expand-md navbar-light bg-transparent ">
+      <div className="container-fluid">
         <img src={logo} className="App-logo" alt="logo" />
         <button
           className="navbar-toggler"
-          type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link navbar-link text-white" href="#">
+        <div className="collapse navbar-collapse " id="navbarNav">
+          <ul className="navbar-nav ">
+            <li className="nav-item">
+              <a className="nav-link text-white" href="#">
                 Nav Link
               </a>
             </li>
@@ -65,8 +61,8 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
