@@ -1,24 +1,24 @@
 import React from 'react';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
-import img from '../../Images/Content-Image.png';
+import img1 from '../../Images/Content-Image.png';
 import '../Paragraph/Paragraph.scss';
 import Heading from '../Heading/Heading';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';
 
 const Paragraph = (props: any) => {
   return (
-    <div className={props.paragraphClass}>
-      <div className=" row">
+    <div className="container-fluid paragraph__wrapper col-12">
+      <div className={props.paragraphClass}>
         <div className="col-md-6 col-12">
           <img
-            src={img}
+            src={props.imgOrientation}
             alt="people speaking with agent"
-            className="paragraph__img"
+            className={props.imgStyle}
           />
         </div>
 
-        <div className="col-md-6 col-12 paragraph__description_wrapper">
+        <div className={props.descriptionStyle}>
           <HorizontalLine lineStyle={'horizontal-line'} />
           <Heading
             headingStyle={'heading__title'}

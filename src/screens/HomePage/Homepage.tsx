@@ -7,36 +7,27 @@ import CenteredParagraph from '../../Components/Paragraph/CenteredParagraph';
 import Testimonials from '../../Components/Testimonials/Testimonials';
 import Footer from '../../Components/Footer/Footer';
 
+import img1 from '../../Images/Content-Image.png';
+import img2 from '../../Images/Content-Image2.png';
+
 const Homepage = (props: any) => {
   return (
     <div>
       <Header />
       <Listings />
       <Paragraph
-        paragraphClass={
-          'paragraph__wrapper' +
-          ' ' +
-          'container-fluid' +
-          ' ' +
-          'col-12' +
-          ' ' +
-          'd-flex' +
-          ' ' +
-          'flex-row'
-        }
+        paragraphClass={'row'}
+        imgOrientation={img1}
+        imgStyle={'paragraph__img'}
+        descriptionStyle={'col-md-6 col-12 paragraph__description_wrapper'}
       />
       <FilterSection />
       <Paragraph
-        paragraphClass={
-          'paragraph__wrapper' +
-          ' ' +
-          'container-fluid' +
-          ' ' +
-          'col-12' +
-          ' ' +
-          'd-flex' +
-          ' ' +
-          'flex-row-reverse'
+        paragraphClass={'row' + ' ' + 'flex-row-reverse'}
+        imgOrientation={img2}
+        imgStyle={'paragraph__img-reverse'}
+        descriptionStyle={
+          'col-md-6 col-12 paragraph__description_wrapper_reverse'
         }
       />
       <CenteredParagraph />

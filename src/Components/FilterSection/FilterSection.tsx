@@ -15,6 +15,8 @@ import house3 from '../../Images/house3.png';
 import house4 from '../../Images/house4.png';
 import house6 from '../../Images/house6.png';
 
+// import images from '../../themes/images';
+
 const properties = [
   {
     id: 1,
