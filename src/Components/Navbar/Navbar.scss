@@ -2,28 +2,37 @@ $primary-color: #000;
 $accent-color: #ffac12;
 $text-color: #666666;
 
-.App-logo {
-  width: 300px;
-  height: 200px;
-  padding-left: 120px;
+.navbar {
+  margin-top: 40px;
+}
+
+.logo {
   margin-top: -10px;
 }
 
-.navbar-nav {
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px 150px;
-  line-height: 40px;
-  margin-left: 230px;
-  margin-right: 10px;
+@media only screen and (min-width: 425px) {
+  .logo {
+    margin-left: 20px;
+  }
 }
 
-.nav-item {
-  width: 140px;
+@media only screen and (min-width: 768px) {
+  .logo {
+    margin-left: 5px;
+  }
 }
 
-@media screen {
+@media only screen and (min-width: 1024px) {
+  .logo {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo {
+    margin-left: -190px;
+  }
   .navbar-nav {
-    width: auto;
+    margin-right: -150px;
   }
 }

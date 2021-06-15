@@ -14,7 +14,7 @@ const Homepage = (props: any) => {
   return (
     <div>
       <Header />
-      <Listings />
+      {/* <Listings />
       <Paragraph
         paragraphClass={'row'}
         imgOrientation={img1}
@@ -32,7 +32,7 @@ const Homepage = (props: any) => {
       />
       <CenteredParagraph />
       <Testimonials />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

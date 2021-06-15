@@ -6,18 +6,17 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <div className="container-fluid col-12">
+    <div className="container-fluid">
       <div className="header">
         <div className="header__overlay">
-          <Navbar />
-
-          <div className="header__heading-wrapper container-fluid">
-            <div className="row">
-              <div className="col-xl-7 col-12">
-                <h2 className="header__heading">
+          <div className="row">
+            <div className="">
+              <Navbar />
+              <div className="col-md-7 col-sm-12 header__heading-wrapper">
+                <h2 className="text-white header__heading">
                   Beautiful homes made for you
                 </h2>
-                <p className="header__heading-description">
+                <p className="text-white header__heading-description">
                   In oculis quidem se esse admonere interesse enim maxime
                   placeat, facere possimus, omnis. Et quidem faciunt, ut labore
                   et accurate disserendum et harum quidem exercitus quid.
@@ -26,7 +25,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <Listings />
+        {/* <Listings /> */}
       </div>
     </div>
   );
