@@ -14,8 +14,8 @@ const Homepage = (props: any) => {
   return (
     <div>
       <Header />
-      {/* <Listings />
-      <Paragraph
+      <Listings />
+      {/* <Paragraph
         paragraphClass={'row'}
         imgOrientation={img1}
         imgStyle={'paragraph__img'}

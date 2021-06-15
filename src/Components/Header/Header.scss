@@ -23,20 +23,20 @@
 
 @media only screen and (max-width: 767px) {
   .header__heading-wrapper {
-    margin: 100px 0;
+    margin: 10px 0;
     width: 100%;
     padding: 60px;
-    font-size: 20px;
+    font-size: 18px;
     .header__heading {
-      font-size: 60px;
+      font-size: 50px;
     }
   }
 }
 @media only screen and (min-width: 768px) {
   .header__heading-wrapper {
-    margin: 100px 0;
+    margin: 20px 0 0 10px;
     width: 100%;
-    padding: 60px;
+    padding: 40px;
     font-size: 20px;
     .header__heading {
       font-size: 60px;
@@ -46,10 +46,10 @@
 
 @media only screen and (min-width: 1024px) {
   .header__heading-wrapper {
-    margin: 100px 20px 0 40px;
+    margin: 10px 20px 0px 40px;
     width: 100%;
     padding: 60px;
-    font-size: 30px;
+    font-size: 25px;
     .header__heading {
       font-size: 60px;
       width: 100%;

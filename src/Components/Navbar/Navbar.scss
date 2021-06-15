@@ -24,7 +24,10 @@ $text-color: #666666;
 
 @media only screen and (min-width: 1024px) {
   .logo {
-    margin-left: 40px;
+    margin-left: -32px;
+  }
+  .navbar-nav {
+    margin-right: -50px;
   }
 }
 
