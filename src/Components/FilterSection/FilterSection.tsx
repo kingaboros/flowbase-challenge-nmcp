@@ -117,27 +117,27 @@ const FilterSection = (props: any) => {
         headingStyle={'heading__title'}
         title={`Find your next place to live`}
       />
-      <div className="container-fluid col-12 ">
+      <div className="container col-12 ">
         <div className="row filter-section__columns ">
-          <div className="col-3 col-xs-12 grey-border filter__control">
+          <div className="col-md-3 col-12 grey-border filter__control">
             <LookingForFilter
               selected={lookingFor}
               onChangeFilter={lookingForFilterHandler}
             />
           </div>
-          <div className="col-3 col-xs-12 grey-border filter__control">
+          <div className="col-md-3 col-12 grey-border filter__control">
             <LocationFilter
               selected={location}
               onChangeFilter={locationFilterHandler}
             />
           </div>
-          <div className="col-3 col-xs-12 grey-border filter__control">
+          <div className="col-md-3 col-12 grey-border filter__control">
             <PropertyTypeFilter
               selected={propertyType}
               onChangeFilter={propertyTypeFilterHandler}
             />
           </div>
-          <div className="col-3 col-xs-12 filter__control">
+          <div className="col-md-3 col-xs-12 filter__control">
             <PriceFilter selected={price} onChangeFilter={priceFilterHandler} />
           </div>
         </div>

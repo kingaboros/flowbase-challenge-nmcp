@@ -21,7 +21,7 @@ const Homepage = (props: any) => {
         imgStyle={'paragraph__img'}
         descriptionStyle={'col-md-6 col-12 paragraph__description_wrapper'}
       />
-      {/* <FilterSection /> */}
+      <FilterSection />
       {/*
       <Paragraph
         paragraphClass={'row' + ' ' + 'flex-row-reverse'}
