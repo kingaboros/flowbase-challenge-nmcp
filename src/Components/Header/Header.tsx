@@ -25,7 +25,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-        {/* <Listings /> */}
       </div>
     </div>
   );

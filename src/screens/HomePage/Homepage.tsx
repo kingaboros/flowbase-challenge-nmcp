@@ -15,12 +15,13 @@ const Homepage = (props: any) => {
     <div>
       <Header />
       <Listings />
-      {/* <Paragraph
+      <Paragraph
         paragraphClass={'row'}
         imgOrientation={img1}
         imgStyle={'paragraph__img'}
         descriptionStyle={'col-md-6 col-12 paragraph__description_wrapper'}
       />
+      {/*
       <FilterSection />
       <Paragraph
         paragraphClass={'row' + ' ' + 'flex-row-reverse'}

@@ -8,7 +8,7 @@ import HorizontalLine from '../HorizontalLine/HorizontalLine';
 
 const Paragraph = (props: any) => {
   return (
-    <div className="container-fluid paragraph__wrapper col-12">
+    <div className="container-fluid paragraph__wrapper">
       <div className={props.paragraphClass}>
         <div className="col-md-6 col-12">
           <img
