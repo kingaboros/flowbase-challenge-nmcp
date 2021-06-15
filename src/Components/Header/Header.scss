@@ -1,12 +1,12 @@
 .header,
 .header__overlay {
-  background-size: cover;
   height: 100vh;
-  width: 100vw;
 }
 
 .header {
   background-image: url('../../Images/header-image.png');
+  background-size: cover;
+  width: 100%;
 }
 
 .header__overlay {
@@ -21,14 +21,14 @@
   padding: 10px 125px 150px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 765px) {
   .header__heading-wrapper {
     margin: 10px 0;
-    width: 100%;
-    padding: 40px;
+    padding: 50px;
     font-size: 16px;
+    max-width: 550px;
     .header__heading {
-      font-size: 50px;
+      font-size: 30px;
     }
   }
 }
@@ -52,7 +52,6 @@
     font-size: 25px;
     .header__heading {
       font-size: 60px;
-      width: 100%;
     }
   }
 }
@@ -60,12 +59,10 @@
 @media only screen and (min-width: 1440px) {
   .header__heading-wrapper {
     margin: 200px 20px 0 40px;
-    width: 100%;
     padding: 60px;
     font-size: 30px;
     .header__heading {
       font-size: 90px;
-      width: 100%;
     }
   }
 }

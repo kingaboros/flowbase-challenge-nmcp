@@ -6,7 +6,7 @@ import './Heading.scss';
 const Heading = (props: any) => {
   return (
     <div className="heading__wrapper">
-      <div className="container-fluid col-12">
+      <div className="container col-12">
         <div className="row full-width">
           <div className="col-md-6 col-12 heading__text">
             <div className={props.headingStyle}>{props.title}</div>

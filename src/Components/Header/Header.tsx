@@ -6,13 +6,13 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <div className="container-fluid">
+    <div style={{ width: '100%' }}>
       <div className="header">
         <div className="header__overlay">
           <div className="row">
             <div className="">
               <Navbar />
-              <div className="col-md-7 col-sm-12 header__heading-wrapper">
+              <div className="col-md-7 col-12 header__heading-wrapper">
                 <h2 className="text-white header__heading">
                   Beautiful homes made for you
                 </h2>
