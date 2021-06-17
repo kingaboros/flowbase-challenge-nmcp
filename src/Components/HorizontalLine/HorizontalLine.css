@@ -1,0 +1,42 @@
+.horizontal-line {
+  border-top-style: solid;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #ffac12, #000) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(#ffac12), to(#000)) 1;
+     border-image: linear-gradient(to right, #ffac12, #000) 1;
+  padding-top: 20px;
+  max-width: 200px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 320px) {
+  .horizontal-line-center {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .horizontal-line-center {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .horizontal-line-center {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .horizontal-line-center {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .horizontal-line-center {
+    margin-left: 150px;
+  }
+}
+/*# sourceMappingURL=HorizontalLine.css.map */

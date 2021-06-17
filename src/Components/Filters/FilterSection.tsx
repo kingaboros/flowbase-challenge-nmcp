@@ -8,7 +8,7 @@ import LocationFilter from '../Filters/LocationFilter';
 import PropertyTypeFilter from '../Filters/PropertyTypeFilter';
 import PriceFilter from '../Filters/PriceFilter';
 
-import '../FilterSection/FilterSection.scss';
+import '../Filters/FilterSection.scss';
 
 import images from '../../themes/images';
 

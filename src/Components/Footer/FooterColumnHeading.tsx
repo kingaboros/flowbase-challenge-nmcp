@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../Footer/FooterColumnHeading/FooterColumnHeading.scss';
+import './FooterColumnHeading.scss';
 
 const FooterColumnHeading = () => {
   return (

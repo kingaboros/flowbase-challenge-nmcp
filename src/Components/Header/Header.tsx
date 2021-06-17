@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
-import Listings from '../Listings/Listings';
 
 import './Header.scss';
 

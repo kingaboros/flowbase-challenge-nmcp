@@ -1,7 +1,7 @@
 import React from 'react';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
-import logo from '../../Images/logo.svg';
+import logo from '../../images/logo.svg';
 import './Navbar.scss';
 
 const NavBar = () => {

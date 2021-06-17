@@ -1,7 +1,6 @@
 import React from 'react';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
-import img1 from '../../Images/Content-Image.png';
 import '../Paragraph/Paragraph.scss';
 import Heading from '../Heading/Heading';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';

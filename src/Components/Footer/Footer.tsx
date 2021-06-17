@@ -3,11 +3,11 @@ import ArrowBtn from '../ArrowBtn/ArrowBtn';
 import { Link } from 'react-router-dom';
 
 import '../Footer/Footer.scss';
-import logo from '../../Images/logo.svg';
+import logo from '../../images/logo.svg';
 
 import { FaFacebookF } from 'react-icons/fa';
 import { AiOutlineTwitter, AiOutlineInstagram } from 'react-icons/ai';
-import FooterColumnHeading from './FooterColumnHeading/FooterColumnHeading';
+import FooterColumnHeading from './FooterColumnHeading';
 
 const Footer = () => {
   return (

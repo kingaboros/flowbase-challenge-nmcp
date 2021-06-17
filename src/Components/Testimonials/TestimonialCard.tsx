@@ -1,6 +1,6 @@
 import React from 'react';
 import './TestimonialCard.scss';
-import img1 from '../../Images/testimonial1.png';
+import img1 from '../../images/testimonial1.png';
 
 const TestimonialCard = (props: any) => {
   return (

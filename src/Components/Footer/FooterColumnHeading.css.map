@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,wBAAwB,CAAC;EACvB,WAAW,EAAE,KAAK;EAElB,KAAK,EAAE,KAAK;CACb;;AACD,AAAA,uBAAuB,CAAC;EACtB,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,IAAI;CACZ;;AAED,AAAA,oBAAoB,CAAC;EACnB,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,KAAK;CACnB;;AAED,AAAA,qBAAqB,CAAC;EACpB,KAAK,EAAE,OAAO;CACf;;AAED,AAAA,qBAAqB,AAAA,MAAM,CAAC;EAC1B,KAAK,EAAE,OAAO;CACf",
+    "sources": [
+        "FooterColumnHeading.scss"
+    ],
+    "names": [],
+    "file": "FooterColumnHeading.css"
+}

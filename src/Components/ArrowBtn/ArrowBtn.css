@@ -1,0 +1,86 @@
+.paragraph__button {
+  font-size: 18px;
+  background-color: #000;
+  margin-left: 12px;
+  padding: 20px 50px;
+  border-radius: 0 20px 0 0;
+  margin-top: 15px;
+}
+
+.navbar_button {
+  border: none;
+  border-radius: 0 20px 0 0;
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.listings_button {
+  background-color: #fff;
+  border: none;
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.listings_button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.white_arrow {
+  padding-left: 3px;
+  color: #fff;
+}
+
+.orange_arrow {
+  color: #ffac12;
+  padding-left: 5px;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 320px) {
+  .listings_button {
+    font-size: 18px;
+  }
+  .centered-paragraph__button {
+    font-size: 16px;
+    margin-left: 35px;
+  }
+  .centered-paragraph__button {
+    font-size: 20px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-button {
+    padding: 10px;
+    max-width: 10px;
+    padding: 10px;
+    text-align: left;
+  }
+  .paragraph__button {
+    margin-top: -10px;
+    font-size: 16px;
+    padding: 15px;
+  }
+  .centered-paragraph__button {
+    margin-left: -5px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .centered-paragraph__button {
+    padding: 20px;
+    margin-left: 90px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .centered-paragraph__button {
+    padding: 20px;
+    margin-left: 140px;
+  }
+}
+/*# sourceMappingURL=ArrowBtn.css.map */
