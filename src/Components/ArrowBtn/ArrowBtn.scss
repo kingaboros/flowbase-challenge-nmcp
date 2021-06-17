@@ -33,12 +33,6 @@ $accent-color: #ffac12;
   cursor: pointer;
 }
 
-.centered-paragraph__button {
-  padding: 20px;
-  margin-left: 180px;
-  align-items: center;
-}
-
 // Arrow
 
 .white_arrow {
@@ -57,6 +51,14 @@ $accent-color: #ffac12;
   .listings_button {
     font-size: 18px;
   }
+  .centered-paragraph__button {
+    font-size: 16px;
+    margin-left: 35px;
+  }
+  .centered-paragraph__button {
+    font-size: 20px;
+    margin-left: -20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -70,5 +72,22 @@ $accent-color: #ffac12;
     margin-top: -10px;
     font-size: 16px;
     padding: 15px;
+  }
+  .centered-paragraph__button {
+    margin-left: -5px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .centered-paragraph__button {
+    padding: 20px;
+    margin-left: 90px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .centered-paragraph__button {
+    padding: 20px;
+    margin-left: 140px;
   }
 }

@@ -18,29 +18,24 @@ $text-color: #666666;
   margin-right: -25px;
 }
 
-.paragraph__img-reverse {
-  margin-top: -80px;
-  width: 100%;
-  height: 100%;
+@media only screen and (min-width: 320px) {
+  .paragraph__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .paragraph__description {
+    font-size: 15px;
+  }
+  // .flex-row-reverse {
+  //   margin-left: -20px;
+  // }
+  .paragraph__img-reverse {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
 }
-
-.paragraph__description_wrapper_reverse {
-  margin-top: 90px;
-  margin-right: 0;
-  padding-left: 140px;
-  width: 100%;
-}
-
-// @media only screen and (min-width: 320px) {
-//   .paragraph__img {
-//     width: 100%;
-//     height: 100%;
-//   }
-
-//   .paragraph__description {
-//     font-size: 15px;
-//   }
-// }
 
 @media only screen and (max-width: 767px) {
   .paragraph__img {
@@ -48,14 +43,20 @@ $text-color: #666666;
     height: 100%;
   }
   .paragraph__description_wrapper {
-    // margin-left: -100px;
-    // margin-top: -200px;
     margin-left: 25px;
   }
   .paragraph__description {
     margin-top: 20px;
-    width: 400px;
+    width: 200px;
     margin-left: 15px;
+  }
+  .paragraph__img-reverse {
+    height: auto;
+  }
+  .paragraph__description_wrapper_reverse {
+    margin-top: 20px;
+    padding-left: 50px;
+    margin-right: -20px;
   }
 }
 
@@ -70,6 +71,18 @@ $text-color: #666666;
   .paragraph__description {
     margin-top: 10px;
     line-height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height: 25px;
+  }
+  .paragraph__img-reverse {
+    margin-top: -80px;
+    height: auto;
+  }
+  .paragraph__description_wrapper_reverse {
+    margin-top: -10px;
+    padding-left: 30px;
+    font-size: 18px;
   }
 }
 
@@ -84,6 +97,17 @@ $text-color: #666666;
   .paragraph__description {
     margin-top: 10px;
     line-height: 30px;
+  }
+  .paragraph__img-reverse {
+    margin-top: -100px;
+    width: 100%;
+    height: 100%;
+  }
+  .paragraph__description_wrapper_reverse {
+    margin-top: 90px;
+    margin-right: 0;
+    padding-left: 140px;
+    width: 100%;
   }
 }
 

@@ -5,12 +5,12 @@ import '../Properties/Properties.scss';
 
 const Properties = (props: any) => {
   return (
-    <div className="containter-fluid properties__wrapper col-4">
+    <div className="containter-fluid properties__wrapper  col-4  ">
       <img className="card-img-top image-shadow" src={props.image} />
       <div className="properties__description">
         <h2 className="card-title properties__title">{props.title}</h2>
         <div className="row properties__icons__row">
-          <div className="col-4 properties__icons">
+          <div className="col-4 col-xs-12 properties__icons">
             <div className="row">
               <div className="col-6 properties__icons__values">
                 <FaBed />
@@ -20,7 +20,7 @@ const Properties = (props: any) => {
               </div>
             </div>
           </div>
-          <div className="col-4 properties__icons">
+          <div className="col-4 col-xs-12 properties__icons">
             <div className="row">
               <div className="col-6 properties__icons__values">
                 <FaBath />
@@ -30,7 +30,7 @@ const Properties = (props: any) => {
               </div>
             </div>
           </div>
-          <div className="col-4 properties__icons">
+          <div className="col-4 col-xs-12 properties__icons">
             <div className="row">
               <div className="col-6 properties__icons__values">
                 <FaHashtag />

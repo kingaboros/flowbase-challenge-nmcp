@@ -9,8 +9,8 @@ const CenteredParagraph = () => {
   return (
     <div className="container-fluid centered-paragraph__description_wrapper ">
       <div className="row">
-        <div className="col-3"></div>
-        <div className="col-5">
+        <div className="col-lg-3"></div>
+        <div className="col-md-5">
           <HorizontalLine
             lineStyle={'horizontal-line' + ' ' + 'horizontal-line-center'}
           />
