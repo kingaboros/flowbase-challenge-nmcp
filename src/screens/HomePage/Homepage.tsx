@@ -32,7 +32,6 @@ const Homepage = (props: any) => {
       />
       <CenteredParagraph />
       <Testimonials />
-
       <Footer />
     </div>
   );

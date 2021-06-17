@@ -20,4 +20,14 @@
 .footer__column-links:hover {
   color: #918d8d;
 }
+
+@media only screen and (min-width: 425px) {
+  .footer__heading-columns {
+    width: 100%;
+    margin-left: 30px;
+  }
+  .footer-heading-row {
+    width: 200px;
+  }
+}
 /*# sourceMappingURL=FooterColumnHeading.css.map */
