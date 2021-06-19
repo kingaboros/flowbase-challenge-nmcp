@@ -1,3 +1,5 @@
+@import '../../themes/colors.scss';
+
 .header,
 .header__overlay {
   height: 100vh;
@@ -17,7 +19,7 @@
   );
 }
 .header__heading-wrapper {
-  color: #fff;
+  color: $white;
   padding: 10px 125px 150px;
 }
 

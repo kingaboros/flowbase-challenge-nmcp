@@ -1,6 +1,4 @@
-$primary-color: #000;
-$accent-color: #ffac12;
-$text-color: #666666;
+@import '../../themes/colors.scss';
 
 .paragraph__wrapper {
   margin-top: 30px;
@@ -11,7 +9,7 @@ $text-color: #666666;
 }
 
 .paragraph__description {
-  color: $text-color;
+  color: $textColor;
 }
 
 .flex-row-reverse {

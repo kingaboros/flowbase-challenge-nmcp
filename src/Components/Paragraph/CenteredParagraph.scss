@@ -1,11 +1,13 @@
+@import '../../themes/colors.scss';
+
 .centered-paragraph__description_wrapper {
-  background: linear-gradient(0.26turn, #0d0a04, #201502);
+  background: linear-gradient(0.26turn, $gradient1, $gradient2);
   width: 100vw;
   height: 100%;
   padding: 20px;
 }
 .centered-paragraph__description {
-  color: #fff;
+  color: $white;
   font-weight: lighter;
   text-align: center;
   font-size: 18px;

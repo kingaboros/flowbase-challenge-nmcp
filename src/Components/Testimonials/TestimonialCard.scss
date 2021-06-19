@@ -1,3 +1,5 @@
+@import '../../themes/colors.scss';
+
 .testimonials {
   padding: 80px;
 }
@@ -22,10 +24,10 @@
 }
 
 .testimonial-card__black {
-  background-color: #000;
+  background-color: $black;
   padding: 5px;
   .testimonial-card__description {
-    color: #fff;
+    color: $white;
     width: 190px;
   }
 }

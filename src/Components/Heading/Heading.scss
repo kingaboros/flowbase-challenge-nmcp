@@ -1,3 +1,5 @@
+@import '../../themes/colors.scss';
+
 .heading__text {
   margin-top: 10px;
   margin-left: -20px;
@@ -15,7 +17,7 @@
 .heading__title-white {
   font-size: 40px;
   display: block;
-  color: #fff;
+  color: $white;
   text-align: center;
 }
 @media only screen and (max-width: 425px) {

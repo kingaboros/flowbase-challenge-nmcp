@@ -1,10 +1,12 @@
+@import '../../themes/colors.scss';
+
 .footer__heading-columns {
   margin-left: 140px;
   width: 100vw;
 }
 .footer__column-heading {
   margin-top: 20px;
-  color: #fff;
+  color: $white;
 }
 
 .footer__column-list {
@@ -13,11 +15,11 @@
 }
 
 .footer__column-links {
-  color: #727272;
+  color: $lightGrey;
 }
 
 .footer__column-links:hover {
-  color: #918d8d;
+  color: $darkGrey;
 }
 
 @media only screen and (min-width: 425px) {
