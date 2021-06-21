@@ -17,7 +17,11 @@ const TestimonialCard = (props: any) => {
           <div className={props.testimonialStyle}>
             <div className="row testimonial-card_row">
               <div className="col-4 ">
-                <img className="testimonial-card__img" src={img1} />
+                <img
+                  className="testimonial-card__img"
+                  src={img1}
+                  alt="properties"
+                />
               </div>
               <div className="col-8 testimonial-card__description">
                 <h4 className="testimonial-card__name">Lara Madrigal</h4>

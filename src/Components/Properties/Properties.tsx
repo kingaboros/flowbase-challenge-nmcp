@@ -6,7 +6,11 @@ import '../Properties/Properties.scss';
 const Properties = (props: any) => {
   return (
     <div className="containter-fluid properties__wrapper  col-4  ">
-      <img className="card-img-top image-shadow" src={props.image} />
+      <img
+        className="card-img-top image-shadow"
+        src={props.image}
+        alt="properties"
+      />
       <div className="properties__description">
         <h2 className="card-title properties__title">{props.title}</h2>
         <div className="row properties__icons__row">

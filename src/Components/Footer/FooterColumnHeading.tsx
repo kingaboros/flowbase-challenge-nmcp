@@ -8,23 +8,35 @@ const FooterColumnHeading = () => {
       <h4 className="footer__column-heading"> Column Heading </h4>
       <div className="row footer-heading-row ">
         <ul className="footer__column-list nav-link ">
-          <li className="">
-            <a href="#" className="footer__column-links nav-link">
+          <li>
+            <a
+              href="http://www.nomorecoffeeplease.com/"
+              className="footer__column-links nav-link"
+            >
               Link goes here
             </a>
           </li>
           <li>
-            <a href="#" className="footer__column-links nav-link">
+            <a
+              href="http://www.nomorecoffeeplease.com/"
+              className="footer__column-links nav-link"
+            >
               Link goes here
             </a>
           </li>
           <li>
-            <a href="#" className="footer__column-links nav-link">
+            <a
+              href="http://www.nomorecoffeeplease.com/"
+              className="footer__column-links nav-link"
+            >
               Link goes here
             </a>
           </li>
           <li>
-            <a href="#" className="footer__column-links nav-link">
+            <a
+              href="http://www.nomorecoffeeplease.com/"
+              className="footer__column-links nav-link"
+            >
               Link goes here
             </a>
           </li>

@@ -21,13 +21,7 @@ const Footer = () => {
         <div className="col-4 footer__button">
           <ArrowBtn
             btnName={'Work with us'}
-            btnClass={
-              'btn-warning' +
-              ' ' +
-              'navbar_button' +
-              ' ' +
-              'centered-paragraph__button'
-            }
+            btnClass={`${'btn-warning'} ${'navbar_button'} ${'centered-paragraph__button'}`}
             arrowClass={'white_arrow'}
           />
         </div>
@@ -36,7 +30,7 @@ const Footer = () => {
       <div className="lower-footer">
         <div className="row">
           <div className="col-md-4">
-            <img className="footer__logo" src={logo} />
+            <img className="footer__logo" src={logo} alt="logo" />
             <div className="row ">
               <div className="col-4 social-links">
                 <FaFacebookF />

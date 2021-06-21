@@ -19,43 +19,41 @@ const NavBar = () => {
         <div className="collapse navbar-collapse " id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <a
+                className="nav-link text-white"
+                href="http://www.nomorecoffeeplease.com/"
+              >
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <a
+                className="nav-link text-white"
+                href="http://www.nomorecoffeeplease.com/"
+              >
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <a
+                className="nav-link text-white"
+                href="http://www.nomorecoffeeplease.com/"
+              >
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <a
+                className="nav-link text-white"
+                href="http://www.nomorecoffeeplease.com/"
+              >
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
               <ArrowBtn
                 btnName={'Work with us'}
-                btnClass={
-                  'btn-warning' +
-                  ' ' +
-                  'nav-link' +
-                  ' ' +
-                  ' ' +
-                  'button-text' +
-                  ' ' +
-                  ' ' +
-                  'font-weight-bolder' +
-                  ' ' +
-                  'text-dark' +
-                  ' ' +
-                  'navbar_button'
-                }
+                btnClass={`${'btn-warning'} ${'nav-link'} ${'button-text'} ${'font-weight-bolder'} ${'text-dark'} ${'navbar_button'}`}
                 arrowClass={'white_arrow'}
               />
             </li>

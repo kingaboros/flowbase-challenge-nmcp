@@ -12,10 +12,10 @@ const CenteredParagraph = () => {
         <div className="col-lg-3"></div>
         <div className="col-md-5">
           <HorizontalLine
-            lineStyle={'horizontal-line' + ' ' + 'horizontal-line-center'}
+            lineStyle={`${'horizontal-line'} ${'horizontal-line-center'}`}
           />
           <Heading
-            headingStyle={'heading__title' + ' ' + 'heading__title-white'}
+            headingStyle={`${'heading__title'} ${'heading__title-white'}`}
             title={`You're in good hands`}
           />
 
@@ -28,13 +28,7 @@ const CenteredParagraph = () => {
           </p>
           <ArrowBtn
             btnName={'Learn more'}
-            btnClass={
-              'btn-warning' +
-              ' ' +
-              'navbar_button' +
-              ' ' +
-              'centered-paragraph__button'
-            }
+            btnClass={`${'btn-warning'} ${'navbar_button'} ${'centered-paragraph__button'}`}
             arrowClass={'white_arrow'}
           />
         </div>

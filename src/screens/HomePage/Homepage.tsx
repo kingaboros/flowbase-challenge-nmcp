@@ -23,7 +23,7 @@ const Homepage = (props: any) => {
       />
       <FilterSection />
       <Paragraph
-        paragraphClass={'row' + ' ' + 'flex-row-reverse'}
+        paragraphClass={`${'row'} ${'flex-row-reverse'}`}
         imgOrientation={img2}
         imgStyle={'paragraph__img-reverse'}
         descriptionStyle={
