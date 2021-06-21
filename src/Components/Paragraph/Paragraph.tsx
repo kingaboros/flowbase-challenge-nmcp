@@ -1,9 +1,10 @@
 import React from 'react';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
-
-import '../Paragraph/Paragraph.scss';
 import Heading from '../Heading/Heading';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';
+
+import '../Paragraph/Paragraph.scss';
+import strings from '../../themes/strings';
 
 const Paragraph = (props: any) => {
   return (
