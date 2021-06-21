@@ -11,6 +11,7 @@ import PriceFilter from '../Filters/PriceFilter';
 import '../Filters/FilterSection.scss';
 
 import images from '../../themes/images';
+import APICalls from '../../utils/APICalls';
 
 const properties = [
   {
@@ -117,6 +118,7 @@ const FilterSection = (props: any) => {
         headingStyle={'heading__title'}
         title={`Find your next place to live`}
       />
+
       <div className="container col-12 ">
         <div className="row filter-section__columns ">
           <div className="col-md-3 col-12 grey-border filter__control">
@@ -140,6 +142,9 @@ const FilterSection = (props: any) => {
           <div className="col-md-3 col-xs-12 filter__control">
             <PriceFilter selected={price} onChangeFilter={priceFilterHandler} />
           </div>
+        </div>
+        <div className="row">
+          <APICalls />
         </div>
       </div>
       <div>
