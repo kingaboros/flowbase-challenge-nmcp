@@ -12,7 +12,6 @@ const APICalls = (props: any) => {
       .get('https://rent-challenge-api.herokuapp.com/rents')
       .then(response => {
         setProperties(response.data);
-        console.log(response.data);
       });
   };
 
