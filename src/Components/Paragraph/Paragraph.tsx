@@ -32,7 +32,7 @@ const Paragraph = (props: any) => {
           </p>
           <ArrowBtn
             btnName={'Learn more'}
-            btnClass={'btn-dark' + ' ' + 'paragraph__button'}
+            btnClass={`${'btn-dark'} ${'paragraph__button'}`}
             arrowClass={'orange_arrow'}
           />
         </div>
