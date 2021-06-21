@@ -13,9 +13,9 @@ import '../Filters/FilterSection.scss';
 import images from '../../themes/images';
 import APICalls from '../../utils/APICalls';
 
-const properties = [
+const propertiesDummy = [
   {
-    id: 1,
+    key: 1,
     type: 'Flat',
     location: 'New York',
     title: 'Malto House',
@@ -27,7 +27,7 @@ const properties = [
     lookingFor: 'rent',
   },
   {
-    id: 2,
+    key: 2,
     type: 'House',
     location: 'Las Vegas',
     title: 'Vegas House',
@@ -39,7 +39,7 @@ const properties = [
     lookingFor: 'let',
   },
   {
-    id: 3,
+    key: 3,
     type: 'Bungalow',
     location: 'Michigan',
     title: 'Mich House',
@@ -51,7 +51,7 @@ const properties = [
     lookingFor: 'rent',
   },
   {
-    id: 4,
+    key: 4,
     type: 'Flat',
     location: 'New York',
     title: 'Mochi House',
@@ -63,7 +63,7 @@ const properties = [
     lookingFor: 'let',
   },
   {
-    id: 5,
+    key: 5,
     type: 'Flat',
     location: 'Las Vegas',
     title: 'Mickey House',
@@ -75,7 +75,7 @@ const properties = [
     lookingFor: 'buy',
   },
   {
-    id: 6,
+    key: 6,
     type: 'Holiday Home',
     location: 'Michigan',
     title: 'Holiday House',
@@ -107,9 +107,9 @@ const FilterSection = (props: any) => {
     setPrice(selectedPrice);
   };
 
-  let filteredProperties = properties.filter((properties: any) => {
-    return properties.lookingFor === lookingFor || lookingFor === 'all';
-  });
+  // let filteredProperties = propertiesDummy.filter((properties: any) => {
+  //   return properties.lookingFor === lookingFor || lookingFor === 'all';
+  // });
 
   return (
     <div className="filter-section__wrapper">
@@ -148,19 +148,19 @@ const FilterSection = (props: any) => {
         </div>
       </div>
       <div>
-        <div className="filter-section__results">
+        {/* <div className="filter-section__results">
           <div className="row">
             {filteredProperties.map((properties: any) => (
               <Properties
-                image={properties.image}
-                title={properties.title}
-                bedrooms={properties.bedrooms}
-                bathrooms={properties.bathrooms}
-                symbol={properties.symbol}
+                image={props.thumbnail}
+                title={props.description}
+                beds={props.bedrooms}
+                baths={props.bathrooms}
+                symbol={props.parkingSpots}
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

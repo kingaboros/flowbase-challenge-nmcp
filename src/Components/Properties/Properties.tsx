@@ -4,15 +4,16 @@ import { FaBed, FaBath, FaHashtag } from 'react-icons/fa';
 import '../Properties/Properties.scss';
 
 const Properties = (props: any) => {
+  const { description, thumbnail, rooms } = props;
   return (
     <div className="containter-fluid properties__wrapper  col-4  ">
       <img
         className="card-img-top image-shadow"
-        src={props.image}
+        src={thumbnail}
         alt="properties"
       />
       <div className="properties__description">
-        <h2 className="card-title properties__title">{props.title}</h2>
+        <h2 className="card-title properties__title">{description}</h2>
         <div className="row properties__icons__row">
           <div className="col-4 col-xs-12 properties__icons">
             <div className="row">
@@ -20,7 +21,7 @@ const Properties = (props: any) => {
                 <FaBed />
               </div>
               <div className="col-6 properties__icons__values properties__grey__border">
-                <p className="">{props.bedrooms}</p>
+                <p>{rooms.bedrooms}</p>
               </div>
             </div>
           </div>
@@ -30,7 +31,7 @@ const Properties = (props: any) => {
                 <FaBath />
               </div>
               <div className="col-6 properties__icons__values properties__grey__border">
-                <p className="">{props.bathrooms}</p>
+                <p>{rooms.bathrooms}</p>
               </div>
             </div>
           </div>
@@ -40,7 +41,7 @@ const Properties = (props: any) => {
                 <FaHashtag />
               </div>
               <div className="col-6 properties__icons__values">
-                <p className="">{props.symbol}</p>
+                <p>{rooms.parkingSpots}</p>
               </div>
             </div>
           </div>
