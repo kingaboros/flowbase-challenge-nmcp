@@ -1,4 +1,5 @@
 import React from 'react';
+import strings from '../../themes/strings';
 
 const PriceFilter = (props: any) => {
   const dropdownChangeHandler = (e: any) => {
@@ -7,7 +8,7 @@ const PriceFilter = (props: any) => {
   return (
     <div className="filter__wrapper">
       <div className="filter__control">
-        <label>Price</label>
+        <label>{strings.filterLabels.price}</label>
         <select value={props.selected} onChange={dropdownChangeHandler}>
           <option value="blank">--------</option>
           <option value="0-2000">$0-2000</option>

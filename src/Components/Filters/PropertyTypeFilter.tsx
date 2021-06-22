@@ -1,4 +1,5 @@
 import React from 'react';
+import strings from '../../themes/strings';
 
 const PropertyTypeFilter = (props: any) => {
   const dropdownChangeHandler = (e: any) => {
@@ -7,7 +8,7 @@ const PropertyTypeFilter = (props: any) => {
   return (
     <div className="filter__wrapper">
       <div className="filter__control">
-        <label>Property Type</label>
+        <label>{strings.filterLabels.property}</label>
         <select value={props.selected} onChange={dropdownChangeHandler}>
           <option value="blank">--------</option>
           <option value="house">House</option>

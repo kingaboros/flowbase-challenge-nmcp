@@ -1,11 +1,13 @@
 import React from 'react';
-
+import strings from '../../themes/strings';
 import './FooterColumnHeading.scss';
 
 const FooterColumnHeading = () => {
   return (
     <div className="footer__heading-columns ">
-      <h4 className="footer__column-heading"> Column Heading </h4>
+      <h4 className="footer__column-heading">
+        {strings.headings.footerColumnHeading}
+      </h4>
       <div className="row footer-heading-row ">
         <ul className="footer__column-list nav-link ">
           <li className="">

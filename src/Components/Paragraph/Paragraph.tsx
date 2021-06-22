@@ -22,17 +22,11 @@ const Paragraph = (props: any) => {
           <HorizontalLine lineStyle={'horizontal-line'} />
           <Heading
             headingStyle={'heading__title'}
-            title={`You're in good hands`}
+            title={strings.headings.headingText1}
           />
-          <p className="paragraph__description">
-            Torquatos nostros? quos dolores eos, qui dolorem ipsum per se texit,
-            ne ferae quidem se repellere, idque instituit docere sic: omne
-            animal, simul atque integre iudicante itaque aiunt hanc quasi
-            involuta aperiri, altera occulta quaedam et voluptatem accusantium
-            doloremque.
-          </p>
+          <p className="paragraph__description">{strings.descriptions.text1}</p>
           <ArrowBtn
-            btnName={'Learn more'}
+            btnName={strings.buttons.paragraphBtn}
             btnClass={`${'btn-dark'} ${'paragraph__button'}`}
             arrowClass={'orange_arrow'}
           />

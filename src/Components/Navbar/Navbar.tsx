@@ -1,6 +1,6 @@
 import React from 'react';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
-
+import strings from '../../themes/strings';
 import logo from '../../images/logo.svg';
 import './Navbar.scss';
 
@@ -40,7 +40,7 @@ const NavBar = () => {
             </li>
             <li className="nav-item">
               <ArrowBtn
-                btnName={'Work with us'}
+                btnName={strings.buttons.navbarBtn}
                 btnClass={
                   'btn-warning' +
                   ' ' +
