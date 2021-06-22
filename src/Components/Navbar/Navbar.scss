@@ -1,9 +1,25 @@
+@import 'bootstrap';
+
 .navbar {
   margin-top: 40px;
+  @extend .navbar-expand-md;
+  @extend .navbar-light;
+  @extend .bg-transparent;
+}
+
+.collapse {
+  @extend .navbar-collapse;
+}
+.navbar-nav {
+  @extend .ml-auto;
 }
 
 .logo {
   margin-top: -10px;
+}
+
+.nav-link {
+  @extend .text-white;
 }
 
 @media only screen and (min-width: 425px) {

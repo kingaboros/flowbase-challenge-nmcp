@@ -1,10 +1,18 @@
 @import '../../themes/colors.scss';
+@import 'bootstrap';
 
-.heading__text {
+.headingWrapper {
+  @extend .container;
+  @extend .col-12;
+}
+.headingText {
   margin-top: 10px;
   margin-left: -20px;
+  @extend .col-md-6;
+  @extend .col-12;
 }
-.heading__title {
+
+.headingTitle {
   font-family: inter, sans-serif;
   font-size: 40px;
   letter-spacing: 1px;
@@ -14,14 +22,13 @@
   margin-left: 14px;
 }
 
-.heading__title-white {
+.headingTitleWhite {
   font-size: 40px;
   display: block;
-  color: $white;
   text-align: center;
 }
 @media only screen and (max-width: 425px) {
-  .heading__title {
+  .headingTitle {
     margin-top: -10px;
     font-size: 25px;
     width: 200px;
@@ -30,29 +37,29 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .heading__title {
+  .headingTitle {
     margin-top: -10px;
     font-size: 25px;
     width: 200px;
   }
-  .heading__title__white {
+  .headingTitleWhite {
     width: 400px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .heading__title {
+  .headingTitle {
     font-size: 25px;
     width: 300px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .heading__title {
+  .headingTitle {
     font-size: 40px;
     width: 500px;
   }
-  .heading__title-white {
+  .headingTitleWhite {
     width: 560px;
   }
 }

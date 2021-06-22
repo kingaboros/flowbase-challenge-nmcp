@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';
 import Heading from '../Heading/Heading';
-
 import LookingForFilter from '../Filters/LookingForFilter';
 import LocationFilter from '../Filters/LocationFilter';
 import PropertyTypeFilter from '../Filters/PropertyTypeFilter';
@@ -10,6 +9,7 @@ import PriceFilter from '../Filters/PriceFilter';
 import '../Filters/FilterSection.scss';
 
 import APICalls from '../../utils/APICalls';
+import strings from '../../themes/strings';
 
 const FilterSection = (props: any) => {
   const [lookingFor, setLookingFor] = useState('All');
@@ -31,34 +31,34 @@ const FilterSection = (props: any) => {
   };
 
   return (
-    <div className="filter-section__wrapper">
-      <HorizontalLine lineStyle={'horizontal-line'} />
+    <div className="filterSectionWrapper">
+      <HorizontalLine lineStyle={'horizontalLine'} />
       <Heading
-        headingStyle={'heading__title'}
-        title={`Find your next place to live`}
+        headingStyle={'headingTitle'}
+        title={strings.headings.filtersHeading}
       />
 
-      <div className="container col-12 ">
-        <div className="row filter-section__columns ">
-          <div className="col-md-3 col-12 grey-border filter__control">
+      <div className="container">
+        <div className="filterSectionColumns">
+          <div className="greyBorder filterControl">
             <LookingForFilter
               selected={lookingFor}
               onChangeFilter={lookingForFilterHandler}
             />
           </div>
-          <div className="col-md-3 col-12 grey-border filter__control">
+          <div className="greyBorder filterControl">
             <LocationFilter
               selected={location}
               onChangeFilter={locationFilterHandler}
             />
           </div>
-          <div className="col-md-3 col-12 grey-border filter__control">
+          <div className="greyBorder filterControl">
             <PropertyTypeFilter
               selected={propertyType}
               onChangeFilter={propertyTypeFilterHandler}
             />
           </div>
-          <div className="col-md-3 col-xs-12 filter__control">
+          <div className="filterControl">
             <PriceFilter selected={price} onChangeFilter={priceFilterHandler} />
           </div>
         </div>

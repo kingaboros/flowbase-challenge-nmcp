@@ -6,7 +6,7 @@ import './Navbar.scss';
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-transparent ">
+    <nav className="navbar">
       <div className="container">
         <img src={logo} className="logo navbar-brand" alt="logo" />
         <button
@@ -16,45 +16,33 @@ const NavBar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse " id="navbarNav">
-          <ul className="navbar-nav ml-auto">
+        <div className="collapse" id="navbarNav">
+          <ul className="navbar-nav">
             <li className="nav-item">
-              <a
-                className="nav-link text-white"
-                href="http://www.nomorecoffeeplease.com/"
-              >
+              <a className="nav-link" href="http://www.nomorecoffeeplease.com/">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link text-white"
-                href="http://www.nomorecoffeeplease.com/"
-              >
+              <a className="nav-link" href="http://www.nomorecoffeeplease.com/">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link text-white"
-                href="http://www.nomorecoffeeplease.com/"
-              >
+              <a className="nav-link" href="http://www.nomorecoffeeplease.com/">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link text-white"
-                href="http://www.nomorecoffeeplease.com/"
-              >
+              <a className="nav-link" href="http://www.nomorecoffeeplease.com/">
                 Nav Link
               </a>
             </li>
             <li className="nav-item">
               <ArrowBtn
                 btnName={strings.buttons.navbarBtn}
-                btnClass={`${'btn-warning'} ${'nav-link'} ${'button-text'} ${'font-weight-bolder'} ${'text-dark'} ${'navbar_button'}`}
-                arrowClass={'white_arrow'}
+                btnClass={'navbarButton'}
+                arrowClass={'whiteArrow'}
               />
             </li>
           </ul>

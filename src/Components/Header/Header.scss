@@ -1,7 +1,8 @@
 @import '../../themes/colors.scss';
+@import 'bootstrap';
 
 .header,
-.header__overlay {
+.headerOverlay {
   height: 100vh;
 }
 
@@ -11,59 +12,65 @@
   width: 100%;
 }
 
-.header__overlay {
+.headerOverlay {
   background: linear-gradient(
     198.73deg,
     rgba(0, 0, 0, 0.0001) 15.31%,
     rgba(0, 0, 0, 0.837986) 67.37%
   );
 }
-.header__heading-wrapper {
+.headerHeading .headerHeadingDescription {
+  @extend .text-white;
+}
+
+.headerHeadingWrapper {
+  @extend .col-md-7;
+  @extend .col-12;
   color: $white;
   padding: 10px 125px 150px;
 }
 
 @media only screen and (max-width: 765px) {
-  .header__heading-wrapper {
+  .headerHeadingWrapper {
     margin: 10px 0;
     padding: 50px;
     font-size: 16px;
     max-width: 550px;
-    .header__heading {
+    .headerHeading {
       font-size: 30px;
     }
   }
 }
 @media only screen and (min-width: 768px) {
-  .header__heading-wrapper {
+  .headerHeadingWrapper {
     margin: 20px 0 0 10px;
     width: 100%;
     padding: 40px;
     font-size: 20px;
-    .header__heading {
+    .headerHeading {
       font-size: 60px;
     }
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .header__heading-wrapper {
+  .headerHeadingWrapper {
     margin: 10px 20px 0px 40px;
     width: 100%;
     padding: 60px;
     font-size: 25px;
-    .header__heading {
+    .headerHeading {
       font-size: 60px;
     }
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .header__heading-wrapper {
+  .headerHeadingWrapper {
     margin: 200px 20px 0 40px;
     padding: 60px;
     font-size: 30px;
-    .header__heading {
+    .headerHeading {
       font-size: 90px;
     }
   }

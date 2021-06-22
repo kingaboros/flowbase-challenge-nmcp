@@ -4,16 +4,16 @@ import './FooterColumnHeading.scss';
 
 const FooterColumnHeading = () => {
   return (
-    <div className="footer__heading-columns ">
-      <h4 className="footer__column-heading">
+    <div className="footerHeadingColumns">
+      <h4 className="footerColumnHeading">
         {strings.headings.footerColumnHeading}
       </h4>
-      <div className="row footer-heading-row ">
-        <ul className="footer__column-list nav-link ">
+      <div className="row footerHeadingRow ">
+        <ul className="footerColumnList">
           <li>
             <a
               href="http://www.nomorecoffeeplease.com/"
-              className="footer__column-links nav-link"
+              className="footerColumnLinks"
             >
               Link goes here
             </a>
@@ -21,7 +21,7 @@ const FooterColumnHeading = () => {
           <li>
             <a
               href="http://www.nomorecoffeeplease.com/"
-              className="footer__column-links nav-link"
+              className="footerColumnLinks"
             >
               Link goes here
             </a>
@@ -29,7 +29,7 @@ const FooterColumnHeading = () => {
           <li>
             <a
               href="http://www.nomorecoffeeplease.com/"
-              className="footer__column-links nav-link"
+              className="footerColumnLinks"
             >
               Link goes here
             </a>
@@ -37,7 +37,7 @@ const FooterColumnHeading = () => {
           <li>
             <a
               href="http://www.nomorecoffeeplease.com/"
-              className="footer__column-links nav-link"
+              className="footerColumnLinks"
             >
               Link goes here
             </a>

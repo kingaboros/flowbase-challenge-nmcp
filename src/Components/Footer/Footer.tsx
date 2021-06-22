@@ -10,37 +10,35 @@ import FooterColumnHeading from './FooterColumnHeading';
 
 const Footer = () => {
   return (
-    <div className="footer__wrapper containter-fluid">
-      <div className="row ">
-        <div className="col-8">
-          <h2 className="footer__heading heading__title-white">
-            {strings.headings.footerHeading}
-            <span className="footer__orange-text">
-              {strings.headings.footerHeadingOrange}
-            </span>{' '}
-          </h2>
-        </div>
-        <div className="col-4 footer__button">
+    <div className="footerWrapper">
+      <div className="footerRow">
+        <h2 className="footerHeading">
+          {strings.headings.footerHeading}
+          <span className="footerOrangeText">
+            {strings.headings.footerHeadingOrange}
+          </span>
+        </h2>
+        <div className="footerButton">
           <ArrowBtn
             btnName={strings.buttons.footerBtn}
-            btnClass={`${'btn-warning'} ${'navbar_button'} ${'centered-paragraph__button'}`}
-            arrowClass={'white_arrow'}
+            btnClass={`${'btn-warning'} ${'navbarButton'} ${'centeredParagraphButton'}`}
+            arrowClass={'whiteArrow'}
           />
         </div>
       </div>
-      <div className="footer-line"> </div>
-      <div className="lower-footer">
+      <div className="footerLine"> </div>
+      <div className="lowerFooter">
         <div className="row">
           <div className="col-md-4">
-            <img className="footer__logo" src={logo} alt="logo" />
-            <div className="row ">
-              <div className="col-4 social-links">
+            <img className="footerLogo" src={logo} alt="logo" />
+            <div className="row">
+              <div className="socialLinks">
                 <FaFacebookF />
               </div>
-              <div className="col-4 social-links">
+              <div className="socialLinks">
                 <AiOutlineTwitter />
               </div>
-              <div className="col-4 social-links">
+              <div className="socialLinks">
                 <AiOutlineInstagram />
               </div>
             </div>

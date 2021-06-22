@@ -8,7 +8,7 @@ import strings from '../../themes/strings';
 
 const Paragraph = (props: any) => {
   return (
-    <div className="container-fluid paragraph__wrapper">
+    <div className="paragraphWrapper">
       <div className={props.paragraphClass}>
         <div className="col-md-6 col-12">
           <img
@@ -19,16 +19,16 @@ const Paragraph = (props: any) => {
         </div>
 
         <div className={props.descriptionStyle}>
-          <HorizontalLine lineStyle={'horizontal-line'} />
+          <HorizontalLine lineStyle={'horizontalLine'} />
           <Heading
-            headingStyle={'heading__title'}
+            headingStyle={'headingTitle'}
             title={strings.headings.headingText1}
           />
-          <p className="paragraph__description">{strings.descriptions.text1}</p>
+          <p className="paragraphDescription">{strings.descriptions.text1}</p>
           <ArrowBtn
             btnName={strings.buttons.paragraphBtn}
-            btnClass={`${'btn-dark'} ${'paragraph__button'}`}
-            arrowClass={'orange_arrow'}
+            btnClass={'paragraphButton'}
+            arrowClass={'orangeArrow'}
           />
         </div>
       </div>

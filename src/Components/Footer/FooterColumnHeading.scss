@@ -1,33 +1,37 @@
 @import '../../themes/colors.scss';
+@import 'bootstrap';
 
-.footer__heading-columns {
+.footerHeadingColumns {
   margin-left: 140px;
   width: 100vw;
 }
-.footer__column-heading {
+.footerColumnHeading {
   margin-top: 20px;
-  color: $white;
+  @extend .text-white;
 }
 
-.footer__column-list {
+.footerColumnList {
   list-style: none;
   margin-left: -15px;
 }
 
-.footer__column-links {
+.footerColumnLinks {
   color: $lightGrey;
+  margin-left: -26px;
+  @extend .nav-link;
 }
 
-.footer__column-links:hover {
+.footerColumnLinks:hover {
   color: $darkGrey;
 }
 
 @media only screen and (min-width: 425px) {
-  .footer__heading-columns {
+  .footerHeadingColumns {
     width: 100%;
-    margin-left: 30px;
+    margin-left: 90px;
+    margin-top: -40px;
   }
-  .footer-heading-row {
+  .footerHeadingRow {
     width: 200px;
   }
 }

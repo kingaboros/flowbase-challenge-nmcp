@@ -8,19 +8,11 @@ const Listings = () => {
     <div className="listings">
       <ArrowBtn
         btnName={strings.buttons.listingsBtn}
-        btnClass={
-          'btn-link' +
-          ' ' +
-          'button-text' +
-          ' ' +
-          ' ' +
-          'font-weight-bold' +
-          ' ' +
-          'text-dark' +
-          ' ' +
-          'listings_button'
-        }
-        arrowClass={'orange_arrow'}
+        btnClass={`${'btn-link'} 
+          ${'button-text'} 
+         ${'font-weight-bold'} ${'text-dark'}
+          ${'listingsButton'}`}
+        arrowClass={'orangeArrow'}
       />
     </div>
   );
