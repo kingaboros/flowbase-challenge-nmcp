@@ -3,6 +3,7 @@ import ArrowBtn from '../ArrowBtn/ArrowBtn';
 import Heading from '../Heading/Heading';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';
 
+import strings from '../../themes/strings';
 import '../Paragraph/CenteredParagraph.scss';
 
 const CenteredParagraph = () => {
@@ -16,18 +17,14 @@ const CenteredParagraph = () => {
           />
           <Heading
             headingStyle={`${'heading__title'} ${'heading__title-white'}`}
-            title={`You're in good hands`}
+            title={strings.headings.headingText1}
           />
 
           <p className="centered-paragraph__description text-center">
-            Torquatos nostros? quos dolores eos, qui dolorem ipsum per se texit,
-            ne ferae quidem se repellere, idque instituit docere sic: omne
-            animal, simul atque integre iudicante itaque aiunt hanc quasi
-            involuta aperiri, altera occulta quaedam et voluptatem accusantium
-            doloremque.
+            {strings.descriptions.text1}
           </p>
           <ArrowBtn
-            btnName={'Learn more'}
+            btnName={strings.buttons.paragraphBtn}
             btnClass={`${'btn-warning'} ${'navbar_button'} ${'centered-paragraph__button'}`}
             arrowClass={'white_arrow'}
           />

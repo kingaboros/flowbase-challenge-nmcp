@@ -1,5 +1,7 @@
 import React from 'react';
 
+import strings from '../../themes/strings';
+
 const LocationFilter = (props: any) => {
   const dropdownChangeHandler = (e: any) => {
     props.onChangeFilter(e.target.value);
@@ -7,7 +9,7 @@ const LocationFilter = (props: any) => {
   return (
     <div className="filter__wrapper">
       <div className="filter__control">
-        <label>Location</label>
+        <label>{strings.filterLabels.location}</label>
         <select value={props.selected} onChange={dropdownChangeHandler}>
           <option value="blank">--------</option>
           <option value="New York">New York</option>

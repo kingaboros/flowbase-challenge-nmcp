@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
-
+import strings from '../../themes/strings';
 import './Header.scss';
 
 const Header = () => {
@@ -13,12 +13,10 @@ const Header = () => {
               <Navbar />
               <div className="col-md-7 col-12 header__heading-wrapper">
                 <h2 className="text-white header__heading">
-                  Beautiful homes made for you
+                  {strings.headings.headerHeading}
                 </h2>
                 <p className="text-white header__heading-description">
-                  In oculis quidem se esse admonere interesse enim maxime
-                  placeat, facere possimus, omnis. Et quidem faciunt, ut labore
-                  et accurate disserendum et harum quidem exercitus quid.
+                  {strings.descriptions.headerText}
                 </p>
               </div>
             </div>

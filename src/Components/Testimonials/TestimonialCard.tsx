@@ -1,7 +1,7 @@
 import React from 'react';
 import './TestimonialCard.scss';
 import img1 from '../../images/testimonial1.png';
-
+import strings from '../../themes/strings';
 const TestimonialCard = (props: any) => {
   return (
     <div className="container">
@@ -9,9 +9,7 @@ const TestimonialCard = (props: any) => {
         <div className="row ">
           <div className="col-12 ">
             <p className={props.textStyle}>
-              “Certe, inquam, pertinax non existimant oportere exquisitis
-              rationibus conquisitis de quo enim ipsam. Torquem detraxit hosti
-              et quidem faciunt, ut aut.”
+              {strings.testimonials.testimonial1}
             </p>
           </div>
           <div className={props.testimonialStyle}>
@@ -24,8 +22,12 @@ const TestimonialCard = (props: any) => {
                 />
               </div>
               <div className="col-8 testimonial-card__description">
-                <h4 className="testimonial-card__name">Lara Madrigal</h4>
-                <p className="testimonial-card__role">Client</p>
+                <h4 className="testimonial-card__name">
+                  {strings.testimonials.testimonialName1}
+                </h4>
+                <p className="testimonial-card__role">
+                  {strings.testimonials.testimonialRole1}
+                </p>
               </div>
             </div>
           </div>

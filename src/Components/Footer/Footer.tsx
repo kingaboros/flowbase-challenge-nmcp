@@ -1,6 +1,6 @@
 import React from 'react';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
-
+import strings from '../../themes/strings';
 import '../Footer/Footer.scss';
 import logo from '../../images/logo.svg';
 
@@ -14,13 +14,15 @@ const Footer = () => {
       <div className="row ">
         <div className="col-8">
           <h2 className="footer__heading heading__title-white">
-            Make your dreams a{' '}
-            <span className="footer__orange-text">reality</span>{' '}
+            {strings.headings.footerHeading}
+            <span className="footer__orange-text">
+              {strings.headings.footerHeadingOrange}
+            </span>{' '}
           </h2>
         </div>
         <div className="col-4 footer__button">
           <ArrowBtn
-            btnName={'Work with us'}
+            btnName={strings.buttons.footerBtn}
             btnClass={`${'btn-warning'} ${'navbar_button'} ${'centered-paragraph__button'}`}
             arrowClass={'white_arrow'}
           />
