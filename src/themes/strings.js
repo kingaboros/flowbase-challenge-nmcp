@@ -1,4 +1,4 @@
-export default {
+const strings = {
   buttons: {
     navbarBtn: 'Work with us',
     listingsBtn: 'See all listings',
@@ -33,3 +33,5 @@ export default {
     testimonialRole1: 'Client',
   },
 };
+
+export default strings;

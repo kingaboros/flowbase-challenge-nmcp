@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';
 import Heading from '../Heading/Heading';
-import Properties from '../Properties/Properties';
 
 import LookingForFilter from '../Filters/LookingForFilter';
 import LocationFilter from '../Filters/LocationFilter';
@@ -10,83 +9,7 @@ import PriceFilter from '../Filters/PriceFilter';
 
 import '../Filters/FilterSection.scss';
 
-import images from '../../themes/images';
 import APICalls from '../../utils/APICalls';
-
-const propertiesDummy = [
-  {
-    key: 1,
-    type: 'Flat',
-    location: 'New York',
-    title: 'Malto House',
-    image: images.house1,
-    bedrooms: 4,
-    bathrooms: 2,
-    symbol: 2,
-    price: 2000,
-    lookingFor: 'rent',
-  },
-  {
-    key: 2,
-    type: 'House',
-    location: 'Las Vegas',
-    title: 'Vegas House',
-    image: images.house2,
-    bedrooms: 4,
-    bathrooms: 2,
-    symbol: 2,
-    price: 3500,
-    lookingFor: 'let',
-  },
-  {
-    key: 3,
-    type: 'Bungalow',
-    location: 'Michigan',
-    title: 'Mich House',
-    image: images.house3,
-    bedrooms: 4,
-    bathrooms: 2,
-    symbol: 2,
-    price: 1450,
-    lookingFor: 'rent',
-  },
-  {
-    key: 4,
-    type: 'Flat',
-    location: 'New York',
-    title: 'Mochi House',
-    image: images.house4,
-    bedrooms: 4,
-    bathrooms: 2,
-    symbol: 2,
-    price: 2500,
-    lookingFor: 'let',
-  },
-  {
-    key: 5,
-    type: 'Flat',
-    location: 'Las Vegas',
-    title: 'Mickey House',
-    image: images.house1,
-    bedrooms: 4,
-    bathrooms: 2,
-    symbol: 2,
-    price: 1450000,
-    lookingFor: 'buy',
-  },
-  {
-    key: 6,
-    type: 'Holiday Home',
-    location: 'Michigan',
-    title: 'Holiday House',
-    image: images.house6,
-    bedrooms: 4,
-    bathrooms: 2,
-    symbol: 2,
-    price: 4500,
-    lookingFor: 'rent',
-  },
-];
 
 const FilterSection = (props: any) => {
   const [lookingFor, setLookingFor] = useState('All');
@@ -106,10 +29,6 @@ const FilterSection = (props: any) => {
   const priceFilterHandler = (selectedPrice: any) => {
     setPrice(selectedPrice);
   };
-
-  // let filteredProperties = propertiesDummy.filter((properties: any) => {
-  //   return properties.lookingFor === lookingFor || lookingFor === 'all';
-  // });
 
   return (
     <div className="filter-section__wrapper">
@@ -147,21 +66,7 @@ const FilterSection = (props: any) => {
           <APICalls />
         </div>
       </div>
-      <div>
-        {/* <div className="filter-section__results">
-          <div className="row">
-            {filteredProperties.map((properties: any) => (
-              <Properties
-                image={props.thumbnail}
-                title={props.description}
-                beds={props.bedrooms}
-                baths={props.bathrooms}
-                symbol={props.parkingSpots}
-              />
-            ))}
-          </div>
-        </div> */}
-      </div>
+      <div></div>
     </div>
   );
 };
