@@ -5,7 +5,7 @@ import strings from '../../themes/strings';
 const TestimonialCard = (props: any) => {
   return (
     <div className="container">
-      <div className="testimonial-card__text">
+      <div className="testimonialCardText">
         <div className="row ">
           <div className="col-12 ">
             <p className={props.textStyle}>
@@ -13,19 +13,19 @@ const TestimonialCard = (props: any) => {
             </p>
           </div>
           <div className={props.testimonialStyle}>
-            <div className="row testimonial-card_row">
+            <div className="testimonialCardRow">
               <div className="col-4 ">
                 <img
-                  className="testimonial-card__img"
+                  className="testimonialCardImg"
                   src={img1}
                   alt="properties"
                 />
               </div>
-              <div className="col-8 testimonial-card__description">
-                <h4 className="testimonial-card__name">
+              <div className="testimonialCardDescription">
+                <h4 className="testimonialCardName">
                   {strings.testimonials.testimonialName1}
                 </h4>
-                <p className="testimonial-card__role">
+                <p className="testimonialCardRole">
                   {strings.testimonials.testimonialRole1}
                 </p>
               </div>

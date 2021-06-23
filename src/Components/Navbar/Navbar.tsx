@@ -1,14 +1,15 @@
 import React from 'react';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
 import strings from '../../themes/strings';
-import logo from '../../images/logo.svg';
+import images from '../../themes/images';
+
 import './Navbar.scss';
 
 const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <img src={logo} className="logo navbar-brand" alt="logo" />
+        <img src={images.logo} className="logo navbar-brand" alt="logo" />
         <button
           className="navbar-toggler"
           data-toggle="collapse"

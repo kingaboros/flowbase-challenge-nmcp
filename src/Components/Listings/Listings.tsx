@@ -1,6 +1,7 @@
 import React from 'react';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
 import strings from '../../themes/strings';
+
 import './Listings.scss';
 
 const Listings = () => {
@@ -8,10 +9,7 @@ const Listings = () => {
     <div className="listings">
       <ArrowBtn
         btnName={strings.buttons.listingsBtn}
-        btnClass={`${'btn-link'} 
-          ${'button-text'} 
-         ${'font-weight-bold'} ${'text-dark'}
-          ${'listingsButton'}`}
+        btnClass={'listingsButton'}
         arrowClass={'orangeArrow'}
       />
     </div>

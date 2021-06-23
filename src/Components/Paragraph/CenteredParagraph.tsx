@@ -8,25 +8,25 @@ import '../Paragraph/CenteredParagraph.scss';
 
 const CenteredParagraph = () => {
   return (
-    <div className="container-fluid centered-paragraph__description_wrapper ">
+    <div className="centeredParagraphDescriptionWrapper">
       <div className="row">
         <div className="col-lg-3"></div>
         <div className="col-md-5">
           <HorizontalLine
-            lineStyle={`${'horizontal-line'} ${'horizontal-line-center'}`}
+            lineStyle={`${'horizontalLine'} ${'horizontalLineCenter'}`}
           />
           <Heading
-            headingStyle={`${'heading__title'} ${'heading__title-white'}`}
+            headingStyle={'centeredParagraphHeading'}
             title={strings.headings.headingText1}
           />
 
-          <p className="centered-paragraph__description text-center">
+          <p className="centeredParagraphDescription">
             {strings.descriptions.text1}
           </p>
           <ArrowBtn
             btnName={strings.buttons.paragraphBtn}
-            btnClass={`${'btn-warning'} ${'navbar_button'} ${'centered-paragraph__button'}`}
-            arrowClass={'white_arrow'}
+            btnClass={'centeredParagraphButton'}
+            arrowClass={'whiteArrow'}
           />
         </div>
       </div>

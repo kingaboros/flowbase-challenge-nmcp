@@ -1,51 +1,62 @@
 @import '../../themes/colors.scss';
+@import 'bootstrap';
 
-.properties__wrapper {
+.propertiesWrapper {
   height: 720px;
   width: 100vw;
   align-items: center;
   padding-top: 40px;
   margin-bottom: -200px;
 }
+.imageCard {
+  @extend .card-img-top;
+  @extend .imageShadow;
+}
 
-.properties__description {
+.propertiesDescription {
   background-color: $white;
   margin-top: 0;
   padding: 20px 15px 0 15px;
   border-radius: 0 0 20px 20px;
   box-shadow: 5px 10px 18px $shadowColor;
 }
-.properties__title {
+.propertiesTitle {
   font-weight: bold;
   padding-bottom: 20px;
+  @extend .card-title;
 }
 
-.properties__icons__row {
+.propertiesIconsRow {
   border-top: 1px solid $shadowColor;
+  @extend .row;
+}
+.propertiesIcons {
+  @extend .col-4;
 }
 
-.properties__icons__values {
+.propertiesIconsValues {
   padding-left: 20px;
   padding-top: 5px;
   align-items: center;
+  @extend .col-6;
 }
 
-.properties__grey__border {
+.propertiesGreyBorder {
   border-right: 1px solid $shadowColor;
 }
 
-.image-shadow {
+.imageShadow {
   box-shadow: 5px 10px 18px $shadowColor;
 }
 
 @media only screen and (min-width: 320px) {
-  .properties__title {
+  .propertiesTitle {
     font-size: 14px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .properties__title {
+  .propertiesTitle {
     font-size: 20px;
   }
 }

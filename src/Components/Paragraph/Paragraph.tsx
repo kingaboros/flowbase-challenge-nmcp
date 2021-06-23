@@ -10,7 +10,7 @@ const Paragraph = (props: any) => {
   return (
     <div className="paragraphWrapper">
       <div className={props.paragraphClass}>
-        <div className="col-md-6 col-12">
+        <div className="imgCol">
           <img
             src={props.imgOrientation}
             alt="people speaking with agent"

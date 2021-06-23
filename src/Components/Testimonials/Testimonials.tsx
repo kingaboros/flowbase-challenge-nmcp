@@ -7,28 +7,28 @@ import './Testimonials.scss';
 
 const Testimonials = () => {
   return (
-    <div className="container testimonials">
+    <div className="testimonials">
       <div className="row"></div>
 
       <div className="row ">
         <div className="col-md-4">
           <TestimonialCard
-            textStyle={'testimonial-card__text'}
-            testimonialStyle={'col-8 testimonial-card__description'}
+            textStyle={'testimonialCardText'}
+            testimonialStyle={'testimonialCardDescription'}
           />
         </div>
 
         <div className="col-md-4">
-          <HorizontalLine lineStyle={'horizontal-line'} />
+          <HorizontalLine lineStyle={'horizontalLine'} />
           <TestimonialCard
-            textStyle={'testimonial-card__active'}
-            testimonialStyle={'testimonial-card__black'}
+            textStyle={'testimonialCardActive'}
+            testimonialStyle={'testimonialCardBlack'}
           />
         </div>
         <div className="col-md-4">
           <TestimonialCard
-            textStyle={'testimonial-card__text'}
-            testimonialStyle={'col-8 testimonial-card__description'}
+            textStyle={'testimonialCardText'}
+            testimonialStyle={'testimonialCardDescription'}
           />
         </div>
       </div>

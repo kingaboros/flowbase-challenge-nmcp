@@ -7,8 +7,7 @@ import CenteredParagraph from '../../components/Paragraph/CenteredParagraph';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import Footer from '../../components/Footer/Footer';
 
-import img1 from '../../images/Content-Image.png';
-import img2 from '../../images/Content-Image2.png';
+import images from '../../themes/images';
 
 const Homepage = (props: any) => {
   return (
@@ -17,18 +16,16 @@ const Homepage = (props: any) => {
       <Listings />
       <Paragraph
         paragraphClass={'row'}
-        imgOrientation={img1}
-        imgStyle={'paragraph__img'}
-        descriptionStyle={'col-md-6 col-12 paragraph__description_wrapper'}
+        imgOrientation={images.paragraphImg}
+        imgStyle={'paragraphImg'}
+        descriptionStyle={'paragraphDescriptionWrapper'}
       />
       <FilterSection />
       <Paragraph
         paragraphClass={`${'row'} ${'flex-row-reverse'}`}
-        imgOrientation={img2}
-        imgStyle={'paragraph__img-reverse'}
-        descriptionStyle={
-          'col-md-6 col-12 paragraph__description_wrapper_reverse'
-        }
+        imgOrientation={images.paragraphImgReverse}
+        imgStyle={'paragraphImgReverse'}
+        descriptionStyle={'paragraphDescriptionWrapperReverse'}
       />
       <CenteredParagraph />
       <Testimonials />

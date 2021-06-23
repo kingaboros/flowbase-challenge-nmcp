@@ -6,41 +6,37 @@ import '../Properties/Properties.scss';
 const Properties = (props: any) => {
   const { description, thumbnail, rooms } = props;
   return (
-    <div className="containter-fluid properties__wrapper  col-4  ">
-      <img
-        className="card-img-top image-shadow"
-        src={thumbnail}
-        alt="properties"
-      />
-      <div className="properties__description">
-        <h2 className="card-title properties__title">{description}</h2>
-        <div className="row properties__icons__row">
-          <div className="col-4 col-xs-12 properties__icons">
+    <div className="containter-fluid propertiesWrapper  col-4  ">
+      <img className="imageCard" src={thumbnail} alt="properties" />
+      <div className="propertiesDescription">
+        <h2 className="propertiesTitle">{description}</h2>
+        <div className="propertiesIconsRow">
+          <div className="propertiesIcons col-xs-12">
             <div className="row">
-              <div className="col-6 properties__icons__values">
+              <div className=" propertiesIconsValues">
                 <FaBed />
               </div>
-              <div className="col-6 properties__icons__values properties__grey__border">
+              <div className="propertiesIconsValues propertiesGreyBorder">
                 <p>{rooms.bedrooms}</p>
               </div>
             </div>
           </div>
-          <div className="col-4 col-xs-12 properties__icons">
+          <div className="propertiesIcons col-xs-12">
             <div className="row">
-              <div className="col-6 properties__icons__values">
+              <div className="propertiesIconsValues">
                 <FaBath />
               </div>
-              <div className="col-6 properties__icons__values properties__grey__border">
+              <div className="propertiesIconsValues propertiesGreyBorder">
                 <p>{rooms.bathrooms}</p>
               </div>
             </div>
           </div>
-          <div className="col-4 col-xs-12 properties__icons">
+          <div className="propertiesIcons col-xs-12">
             <div className="row">
-              <div className="col-6 properties__icons__values">
+              <div className="propertiesIconsValues">
                 <FaHashtag />
               </div>
-              <div className="col-6 properties__icons__values">
+              <div className="propertiesIconsValues">
                 <p>{rooms.parkingSpots}</p>
               </div>
             </div>

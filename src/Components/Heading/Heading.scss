@@ -23,9 +23,17 @@
 }
 
 .headingTitleWhite {
-  font-size: 40px;
   display: block;
   text-align: center;
+}
+
+.centeredParagraphHeading {
+  color: $white;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 35px;
+  margin-left: 40px;
+  width: 500px;
 }
 @media only screen and (max-width: 425px) {
   .headingTitle {
@@ -52,6 +60,9 @@
     font-size: 25px;
     width: 300px;
   }
+  .centeredParagraphHeading {
+    margin-left: 20px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -61,5 +72,8 @@
   }
   .headingTitleWhite {
     width: 560px;
+  }
+  .centeredParagraphHeading {
+    margin-left: 80px;
   }
 }

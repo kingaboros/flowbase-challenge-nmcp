@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import ArrowBtn from '../components/ArrowBtn/ArrowBtn';
 import Properties from '../components/Properties/Properties';
+import strings from '../themes/strings';
 
 const APICalls = (props: any) => {
   const [properties, setProperties] = useState([]);
@@ -16,15 +17,15 @@ const APICalls = (props: any) => {
   };
 
   return (
-    <div className="row col-10">
+    <div className="row col-12">
       <ArrowBtn
         onClick={getProperties}
-        btnName={'Find more properties'}
-        btnClass={`${'btn-dark'} ${'paragraph__button'}`}
-        arrowClass={'orange_arrow'}
+        btnName={strings.buttons.filterBtn}
+        btnClass={'filterBtn'}
+        arrowClass={'orangeArrow'}
       />
       <div className="">
-        <div className="row col-sm-10">
+        <div className="row col-12">
           {properties.map((property: any) => (
             <Properties key={property.id} {...property} />
           ))}

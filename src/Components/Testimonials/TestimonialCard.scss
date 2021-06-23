@@ -1,38 +1,44 @@
 @import '../../themes/colors.scss';
+@import 'bootstrap';
 
 .testimonials {
   padding: 80px;
 }
 
-.testimonial-card__text {
+.testimonialCardText {
   padding: 50px 0 50px 0;
   margin-top: -10px;
 
-  .testimonial-card_row {
+  .testimonialCardRow {
     width: 250px;
+    @extend .row;
   }
 }
 
-.testimonial-card__name {
+.testimonialCardDescription {
+  @extend .col-8;
+}
+.testimonialCardName {
   font-size: 18px;
   padding: 5px;
 }
 
-.testimonial-card__img {
+.testimonialCardImg {
   margin-left: 20px;
   margin-top: 10px;
 }
 
-.testimonial-card__black {
+.testimonialCardBlack {
   background-color: $black;
   padding: 5px;
-  .testimonial-card__description {
-    color: $white;
+  margin-top: 50px;
+  .testimonialCardDescription {
     width: 190px;
   }
+  @extend .text-white;
 }
 
-.testimonial-card__active {
+.testimonialCardActive {
   margin-top: 18px;
   font-weight: bolder;
 }

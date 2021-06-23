@@ -6,7 +6,7 @@ import '../ArrowBtn/ArrowBtn.scss';
 
 const ArrowBtn = (props: any) => {
   return (
-    <div>
+    <div className="buttonBtn">
       <button onClick={props.onClick} className={props.btnClass}>
         {props.btnName}
         <FaLongArrowAltRight className={props.arrowClass} />

@@ -1,12 +1,13 @@
 import React from 'react';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
 import strings from '../../themes/strings';
-import '../Footer/Footer.scss';
-import logo from '../../images/logo.svg';
+import images from '../../themes/images';
 
 import { FaFacebookF } from 'react-icons/fa';
 import { AiOutlineTwitter, AiOutlineInstagram } from 'react-icons/ai';
 import FooterColumnHeading from './FooterColumnHeading';
+
+import '../Footer/Footer.scss';
 
 const Footer = () => {
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
         <div className="footerButton">
           <ArrowBtn
             btnName={strings.buttons.footerBtn}
-            btnClass={`${'btn-warning'} ${'navbarButton'} ${'centeredParagraphButton'}`}
+            btnClass={'footerBtn'}
             arrowClass={'whiteArrow'}
           />
         </div>
@@ -30,7 +31,7 @@ const Footer = () => {
       <div className="lowerFooter">
         <div className="row">
           <div className="col-md-4">
-            <img className="footerLogo" src={logo} alt="logo" />
+            <img className="footerLogo" src={images.logo} alt="logo" />
             <div className="row">
               <div className="socialLinks">
                 <FaFacebookF />

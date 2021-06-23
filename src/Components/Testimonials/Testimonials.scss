@@ -1,4 +1,7 @@
+@import 'bootstrap';
+
 .testimonials {
   padding-top: 150px;
   max-width: 1000px;
+  @extend .container;
 }
