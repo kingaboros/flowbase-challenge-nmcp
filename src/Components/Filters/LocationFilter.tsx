@@ -1,5 +1,5 @@
 import React from 'react';
-
+import * as classes from '../Filters/FilterSection.scss';
 import strings from '../../themes/strings';
 
 const LocationFilter = (props: any) => {
@@ -7,7 +7,7 @@ const LocationFilter = (props: any) => {
     props.onChangeFilter(e.target.value);
   };
   return (
-    <div className="filterWrapper">
+    <div className={classes.filterWrapper}>
       <label>{strings.filterLabels.location}</label>
       <select value={props.selected} onChange={dropdownChangeHandler}>
         <option value="blank">--------</option>

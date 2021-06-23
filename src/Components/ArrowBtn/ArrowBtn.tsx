@@ -2,11 +2,11 @@ import React from 'react';
 
 import { FaLongArrowAltRight } from 'react-icons/fa';
 
-import '../ArrowBtn/ArrowBtn.scss';
+import * as classes from '../ArrowBtn/ArrowBtn.scss';
 
 const ArrowBtn = (props: any) => {
   return (
-    <div className="buttonBtn">
+    <div className={classes.buttonBtn}>
       <button onClick={props.onClick} className={props.btnClass}>
         {props.btnName}
         <FaLongArrowAltRight className={props.arrowClass} />

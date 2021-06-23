@@ -1,17 +1,16 @@
 import React from 'react';
-import ArrowBtn from '../ArrowBtn/ArrowBtn';
-import strings from '../../themes/strings';
-import images from '../../themes/images';
-
+import ArrowBtn from '../../ArrowBtn/ArrowBtn';
+import strings from '../../../themes/strings';
+import images from '../../../themes/images';
+import * as classes from '../Footer2/Footer.scss';
 import { FaFacebookF } from 'react-icons/fa';
+import '../Footer2/Footer.scss';
 import { AiOutlineTwitter, AiOutlineInstagram } from 'react-icons/ai';
-import FooterColumnHeading from './FooterColumnHeading';
-
-import '../Footer/Footer.scss';
+import FooterColumnHeading from '../FooterColumnHeading';
 
 const Footer = () => {
   return (
-    <div className="footerWrapper">
+    <div className={classes.footerWrapper}>
       <div className="footerRow">
         <h2 className="footerHeading">
           {strings.headings.footerHeading}

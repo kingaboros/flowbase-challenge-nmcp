@@ -1,5 +1,5 @@
 @import '../../themes/colors.scss';
-@import 'bootstrap';
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
 .filterSectionWrapper {
   width: 100vw;
@@ -36,6 +36,7 @@
 .filterControl {
   @extend .col-md-3;
   @extend .col-12;
+  @extend .greyBorder;
   display: flex;
   font-size: 16px;
   padding-left: -10px;

@@ -6,7 +6,7 @@ import LocationFilter from '../Filters/LocationFilter';
 import PropertyTypeFilter from '../Filters/PropertyTypeFilter';
 import PriceFilter from '../Filters/PriceFilter';
 
-import '../Filters/FilterSection.scss';
+import * as classes from '../Filters/FilterSection.scss';
 
 import APICalls from '../../utils/APICalls';
 import strings from '../../themes/strings';
@@ -31,38 +31,38 @@ const FilterSection = (props: any) => {
   };
 
   return (
-    <div className="filterSectionWrapper">
+    <div className={classes.filterSectionWrapper}>
       <HorizontalLine lineStyle={'horizontalLine'} />
       <Heading
         headingStyle={'headingTitle'}
         title={strings.headings.filtersHeading}
       />
 
-      <div className="container">
-        <div className="filterSectionColumns">
-          <div className="greyBorder filterControl">
+      <div className={classes.container}>
+        <div className={classes.filterSectionColumns}>
+          <div className={classes.filterControl}>
             <LookingForFilter
               selected={lookingFor}
               onChangeFilter={lookingForFilterHandler}
             />
           </div>
-          <div className="greyBorder filterControl">
+          <div className={classes.filterControl}>
             <LocationFilter
               selected={location}
               onChangeFilter={locationFilterHandler}
             />
           </div>
-          <div className="greyBorder filterControl">
+          <div className={classes.filterControl}>
             <PropertyTypeFilter
               selected={propertyType}
               onChangeFilter={propertyTypeFilterHandler}
             />
           </div>
-          <div className="filterControl">
+          <div className={classes.filterControl}>
             <PriceFilter selected={price} onChangeFilter={priceFilterHandler} />
           </div>
         </div>
-        <div className="row">
+        <div className={classes.row}>
           <APICalls />
         </div>
       </div>

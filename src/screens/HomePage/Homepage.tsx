@@ -5,7 +5,7 @@ import Listings from '../../components/Listings/Listings';
 import FilterSection from '../../components/Filters/FilterSection';
 import CenteredParagraph from '../../components/Paragraph/CenteredParagraph';
 import Testimonials from '../../components/Testimonials/Testimonials';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/Footer/Footer2/Footer';
 
 import images from '../../themes/images';
 

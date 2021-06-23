@@ -1,12 +1,14 @@
 import React from 'react';
 import strings from '../../themes/strings';
 
+import * as classes from '../Filters/FilterSection.scss';
+
 const PriceFilter = (props: any) => {
   const dropdownChangeHandler = (e: any) => {
     props.onChangeFilter(e.target.value);
   };
   return (
-    <div className="filterWrapper">
+    <div className={classes.filterWrapper}>
       <label>{strings.filterLabels.price}</label>
       <select value={props.selected} onChange={dropdownChangeHandler}>
         <option value="blank">--------</option>

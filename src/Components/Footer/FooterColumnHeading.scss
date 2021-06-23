@@ -1,9 +1,10 @@
 @import '../../themes/colors.scss';
-@import 'bootstrap';
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
 .footerHeadingColumns {
   margin-left: 140px;
   width: 100vw;
+  @extend .col-md-2;
 }
 .footerColumnHeading {
   margin-top: 20px;
