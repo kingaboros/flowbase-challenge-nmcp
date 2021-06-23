@@ -7,6 +7,7 @@ const images = {
   house1: require('../images/house1.png').default,
   paragraphImg: require('../images/Content-Image.png').default,
   paragraphImgReverse: require('../images/Content-Image2.png').default,
+  testimonialImg: require('../images/testimonial1.png').default,
 };
 
 export default images;

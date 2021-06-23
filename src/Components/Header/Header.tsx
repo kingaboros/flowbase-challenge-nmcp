@@ -1,21 +1,21 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import strings from '../../themes/strings';
-import './Header.scss';
+import * as classes from './Header.module.scss';
 
 const Header = () => {
   return (
     <div style={{ width: '100%' }}>
-      <div className="header">
-        <div className="headerOverlay">
-          <div className="row">
+      <div className={classes.header}>
+        <div className={classes.headerOverlay}>
+          <div className={classes.row}>
             <div>
               <Navbar />
-              <div className="headerHeadingWrapper">
-                <h2 className="headerHeading">
+              <div className={classes.headerHeadingWrapper}>
+                <h2 className={classes.headerHeading}>
                   {strings.headings.headerHeading}
                 </h2>
-                <p className="headerHeadingDescription">
+                <p className={classes.headerHeadingDescription}>
                   {strings.descriptions.headerText}
                 </p>
               </div>

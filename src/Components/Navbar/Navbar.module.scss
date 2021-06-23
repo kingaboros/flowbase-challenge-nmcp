@@ -18,7 +18,16 @@
   margin-top: -10px;
 }
 
-.nav-link {
+.navMenuList {
+  @extend .navbar-nav;
+}
+
+.navMenuListItem {
+  @extend .nav-item;
+}
+
+.navMenuLink {
+  @extend .nav-link;
   @extend .text-white;
 }
 

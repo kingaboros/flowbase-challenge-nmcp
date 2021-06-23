@@ -10,6 +10,9 @@
   margin-top: 20px;
   @extend .text-white;
 }
+.footerHeadingRow {
+  @extend .row;
+}
 
 .footerColumnList {
   list-style: none;

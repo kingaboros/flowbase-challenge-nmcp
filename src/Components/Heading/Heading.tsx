@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './Heading.scss';
+import * as classes from './Heading.module.scss';
 
 const Heading = (props: any) => {
   return (
-    <div className="headingWrapper">
-      <div className="row">
-        <div className="headingText">
+    <div className={classes.headingWrapper}>
+      <div className={classes.row}>
+        <div className={classes.headingText}>
           <div className={props.headingStyle}>{props.title}</div>
         </div>
       </div>

@@ -7,7 +7,10 @@
   align-items: center;
   padding-top: 40px;
   margin-bottom: -200px;
+  @extend .container-fluid;
+  @extend .col-4;
 }
+
 .imageCard {
   @extend .card-img-top;
   @extend .imageShadow;
@@ -39,6 +42,7 @@
   padding-top: 5px;
   align-items: center;
   @extend .col-6;
+  @extend .propertiesGreyBorder;
 }
 
 .propertiesGreyBorder {

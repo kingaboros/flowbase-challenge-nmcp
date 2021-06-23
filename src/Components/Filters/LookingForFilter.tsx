@@ -1,7 +1,7 @@
 import React from 'react';
 import strings from '../../themes/strings';
 
-import * as classes from '../Filters/FilterSection.scss';
+import * as classes from './FilterSection.module.scss';
 
 const LookingForFilter = (props: any) => {
   const dropdownChangeHandler = (e: any) => {

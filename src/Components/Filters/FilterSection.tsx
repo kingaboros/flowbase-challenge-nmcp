@@ -6,7 +6,7 @@ import LocationFilter from '../Filters/LocationFilter';
 import PropertyTypeFilter from '../Filters/PropertyTypeFilter';
 import PriceFilter from '../Filters/PriceFilter';
 
-import * as classes from '../Filters/FilterSection.scss';
+import * as classes from './FilterSection.module.scss';
 
 import APICalls from '../../utils/APICalls';
 import strings from '../../themes/strings';
@@ -66,7 +66,6 @@ const FilterSection = (props: any) => {
           <APICalls />
         </div>
       </div>
-      <div></div>
     </div>
   );
 };

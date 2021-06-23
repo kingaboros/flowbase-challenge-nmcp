@@ -18,6 +18,10 @@
   @extend .text-center;
 }
 
+.horizontalLineRow {
+  @extend .col-md-5;
+}
+
 @media only screen and (max-width: 425px) {
   .centeredParagraphDescriptionWrapper {
     margin-top: 50px;

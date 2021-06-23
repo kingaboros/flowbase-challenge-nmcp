@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FaLongArrowAltRight } from 'react-icons/fa';
 
-import * as classes from '../ArrowBtn/ArrowBtn.scss';
+import * as classes from './ArrowBtn.module.scss';
 
 const ArrowBtn = (props: any) => {
   return (

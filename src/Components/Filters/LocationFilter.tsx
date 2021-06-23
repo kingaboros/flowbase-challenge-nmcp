@@ -1,5 +1,5 @@
 import React from 'react';
-import * as classes from '../Filters/FilterSection.scss';
+import * as classes from './FilterSection.module.scss';
 import strings from '../../themes/strings';
 
 const LocationFilter = (props: any) => {

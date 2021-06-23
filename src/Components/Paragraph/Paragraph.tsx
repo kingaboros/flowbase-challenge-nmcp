@@ -3,14 +3,18 @@ import ArrowBtn from '../ArrowBtn/ArrowBtn';
 import Heading from '../Heading/Heading';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';
 
-import '../Paragraph/Paragraph.scss';
 import strings from '../../themes/strings';
+
+import * as classes from './Paragraph.module.scss';
+import * as lineClasses from '../HorizontalLine/HorizontalLine.module.scss';
+import * as headingClasses from '../Heading/Heading.module.scss';
+import * as buttonClasses from '../ArrowBtn/ArrowBtn.module.scss';
 
 const Paragraph = (props: any) => {
   return (
-    <div className="paragraphWrapper">
+    <div className={classes.paragraphWrapper}>
       <div className={props.paragraphClass}>
-        <div className="imgCol">
+        <div className={classes.imgCol}>
           <img
             src={props.imgOrientation}
             alt="people speaking with agent"
@@ -19,16 +23,18 @@ const Paragraph = (props: any) => {
         </div>
 
         <div className={props.descriptionStyle}>
-          <HorizontalLine lineStyle={'horizontalLine'} />
+          <HorizontalLine lineStyle={lineClasses.horizontalLine} />
           <Heading
-            headingStyle={'headingTitle'}
+            headingStyle={headingClasses.headingTitle}
             title={strings.headings.headingText1}
           />
-          <p className="paragraphDescription">{strings.descriptions.text1}</p>
+          <p className={classes.paragraphDescription}>
+            {strings.descriptions.text1}
+          </p>
           <ArrowBtn
             btnName={strings.buttons.paragraphBtn}
-            btnClass={'paragraphButton'}
-            arrowClass={'orangeArrow'}
+            btnClass={buttonClasses.paragraphButton}
+            arrowClass={buttonClasses.orangeArrow}
           />
         </div>
       </div>

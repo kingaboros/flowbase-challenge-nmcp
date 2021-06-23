@@ -1,19 +1,19 @@
 import React from 'react';
 import strings from '../../themes/strings';
-import './FooterColumnHeading.scss';
+import * as classes from './FooterColumnHeading.module.scss';
 
 const FooterColumnHeading = () => {
   return (
-    <div className="footerHeadingColumns">
-      <h4 className="footerColumnHeading">
+    <div className={classes.footerHeadingColumns}>
+      <h4 className={classes.footerColumnHeading}>
         {strings.headings.footerColumnHeading}
       </h4>
-      <div className="row footerHeadingRow ">
-        <ul className="footerColumnList">
+      <div className={classes.footerHeadingRow}>
+        <ul className={classes.footerColumnList}>
           <li>
             <a
               href="http://www.nomorecoffeeplease.com/"
-              className="footerColumnLinks"
+              className={classes.footerColumnLinks}
             >
               Link goes here
             </a>
@@ -21,7 +21,7 @@ const FooterColumnHeading = () => {
           <li>
             <a
               href="http://www.nomorecoffeeplease.com/"
-              className="footerColumnLinks"
+              className={classes.footerColumnLinks}
             >
               Link goes here
             </a>
@@ -29,7 +29,7 @@ const FooterColumnHeading = () => {
           <li>
             <a
               href="http://www.nomorecoffeeplease.com/"
-              className="footerColumnLinks"
+              className={classes.footerColumnLinks}
             >
               Link goes here
             </a>
@@ -37,7 +37,7 @@ const FooterColumnHeading = () => {
           <li>
             <a
               href="http://www.nomorecoffeeplease.com/"
-              className="footerColumnLinks"
+              className={classes.footerColumnLinks}
             >
               Link goes here
             </a>
