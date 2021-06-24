@@ -5,3 +5,7 @@
   max-width: 1000px;
   @extend .container;
 }
+
+.testimonialsColumn {
+  @extend .col-md-4;
+}

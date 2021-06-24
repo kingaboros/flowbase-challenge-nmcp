@@ -27,7 +27,11 @@
   padding: 5px;
 }
 
-testimonialCardImgColumn {
+.testimonialCardRole {
+  @extend .text-white;
+}
+
+.testimonialCardImgColumn {
   @extend .col-4;
 }
 .testimonialCardImg {

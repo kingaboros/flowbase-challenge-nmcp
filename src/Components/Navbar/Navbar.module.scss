@@ -16,6 +16,7 @@
 
 .logo {
   margin-top: -10px;
+  @extend .navbar-brand;
 }
 
 .navMenuList {
@@ -54,7 +55,7 @@
 
 @media only screen and (min-width: 1440px) {
   .logo {
-    margin-left: -190px;
+    margin-left: -180px;
   }
   .navbar-nav {
     margin-right: -150px;

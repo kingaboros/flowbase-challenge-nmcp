@@ -24,8 +24,10 @@
   color: $textColor;
 }
 
-.flex-row-reverse {
+.paragraphReverse {
   margin-right: -25px;
+  @extend .row;
+  @extend .flex-row-reverse;
 }
 .paragraphDescriptionWrapperReverse {
   @extend .col-md-6;
@@ -109,7 +111,7 @@
     margin-top: 20px;
     line-height: 30px;
     font-size: 18px;
-    width: 600px;
+    width: 500px;
   }
   .paragraphImgReverse {
     margin-top: -100px;

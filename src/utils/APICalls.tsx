@@ -5,6 +5,9 @@ import ArrowBtn from '../components/ArrowBtn/ArrowBtn';
 import Properties from '../components/Properties/Properties';
 import strings from '../themes/strings';
 
+import * as classes from '../components/Filters/FilterSection.module.scss';
+import * as buttonClasses from '../components/ArrowBtn/ArrowBtn.module.scss';
+
 const APICalls = (props: any) => {
   const [properties, setProperties] = useState([]);
 
@@ -17,15 +20,15 @@ const APICalls = (props: any) => {
   };
 
   return (
-    <div className="row col-12">
+    <div className={classes.propertiesResults}>
       <ArrowBtn
         onClick={getProperties}
         btnName={strings.buttons.filterBtn}
-        btnClass={'filterBtn'}
-        arrowClass={'orangeArrow'}
+        btnClass={buttonClasses.filterBtn}
+        arrowClass={buttonClasses.orangeArrow}
       />
-      <div className="">
-        <div className="row col-12">
+      <div>
+        <div className={classes.propertiesResults}>
           {properties.map((property: any) => (
             <Properties key={property.id} {...property} />
           ))}

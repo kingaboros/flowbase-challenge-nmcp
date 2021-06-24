@@ -1486,6 +1486,7 @@ export const tableSuccess: string;
 export const tableWarning: string;
 export const tabPane: string;
 export const testimonials: string;
+export const testimonialsColumn: string;
 export const textBlack50: string;
 export const textBody: string;
 export const textBreak: string;

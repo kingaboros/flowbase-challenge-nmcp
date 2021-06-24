@@ -7,6 +7,9 @@ import PropertyTypeFilter from '../Filters/PropertyTypeFilter';
 import PriceFilter from '../Filters/PriceFilter';
 
 import * as classes from './FilterSection.module.scss';
+import * as headingClasses from '../Heading/Heading.module.scss';
+import * as buttonClasses from '../ArrowBtn/ArrowBtn.module.scss';
+import * as lineClasses from '../HorizontalLine/HorizontalLine.module.scss';
 
 import APICalls from '../../utils/APICalls';
 import strings from '../../themes/strings';
@@ -32,9 +35,9 @@ const FilterSection = (props: any) => {
 
   return (
     <div className={classes.filterSectionWrapper}>
-      <HorizontalLine lineStyle={'horizontalLine'} />
+      <HorizontalLine lineStyle={lineClasses.horizontalLine} />
       <Heading
-        headingStyle={'headingTitle'}
+        headingStyle={headingClasses.headingTitle}
         title={strings.headings.filtersHeading}
       />
 

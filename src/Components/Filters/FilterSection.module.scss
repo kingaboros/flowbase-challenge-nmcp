@@ -50,6 +50,13 @@
   height: 80px;
 }
 
+.propertiesResults {
+  padding: 0;
+  margin-left: 0;
+  @extend .row;
+  @extend .col-12;
+}
+
 @media only screen and (min-width: 320px) {
   .filterSectionWrapper {
     margin-top: 70px;
@@ -95,6 +102,9 @@
     margin-right: 40px;
     padding: 130px;
   }
+  .propertiesResults {
+    margin-left: -50px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .filterSectionWrapper {
@@ -116,5 +126,8 @@
       font-size: 18px;
       padding: 10px;
     }
+  }
+  .propertiesResults {
+    margin-left: -110px;
   }
 }

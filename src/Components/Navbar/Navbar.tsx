@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className={classes.navbar}>
       <div className={classes.container}>
-        <img src={images.logo} className="navbar-brand logo" alt="logo" />
+        <img src={images.logo} className={classes.logo} alt="logo" />
         <button
           className="navbar-toggler"
           data-toggle="collapse"

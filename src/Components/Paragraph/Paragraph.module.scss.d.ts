@@ -1194,6 +1194,7 @@ export const paragraphDescriptionWrapper: string;
 export const paragraphDescriptionWrapperReverse: string;
 export const paragraphImg: string;
 export const paragraphImgReverse: string;
+export const paragraphReverse: string;
 export const paragraphWrapper: string;
 export const pb0: string;
 export const pb1: string;

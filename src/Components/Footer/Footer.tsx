@@ -2,7 +2,8 @@ import React from 'react';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
 import strings from '../../themes/strings';
 import images from '../../themes/images';
-import * as classes from '../Footer/Footer.module.scss';
+import * as classes from './Footer.module.scss';
+import * as buttonClasses from '../ArrowBtn/ArrowBtn.module.scss';
 
 import { FaFacebookF } from 'react-icons/fa';
 import { AiOutlineTwitter, AiOutlineInstagram } from 'react-icons/ai';
@@ -21,8 +22,8 @@ const Footer = () => {
         <div className={classes.footerButton}>
           <ArrowBtn
             btnName={strings.buttons.footerBtn}
-            btnClass={'footerBtn'}
-            arrowClass={'whiteArrow'}
+            btnClass={buttonClasses.footerBtn}
+            arrowClass={buttonClasses.whiteArrow}
           />
         </div>
       </div>

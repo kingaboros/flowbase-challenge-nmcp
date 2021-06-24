@@ -9,23 +9,25 @@ import Footer from '../../components/Footer/Footer';
 
 import images from '../../themes/images';
 
+import * as paragraph from '../../components/Paragraph/Paragraph.module.scss';
+
 const Homepage = (props: any) => {
   return (
     <div>
       <Header />
       <Listings />
       <Paragraph
-        paragraphClass={'row'}
+        paragraphClass={paragraph.row}
         imgOrientation={images.paragraphImg}
-        imgStyle={'paragraphImg'}
-        descriptionStyle={'paragraphDescriptionWrapper'}
+        imgStyle={paragraph.paragraphImg}
+        descriptionStyle={paragraph.paragraphDescriptionWrapper}
       />
       <FilterSection />
       <Paragraph
-        paragraphClass={`${'row'} ${'flex-row-reverse'}`}
+        paragraphClass={paragraph.paragraphReverse}
         imgOrientation={images.paragraphImgReverse}
-        imgStyle={'paragraphImgReverse'}
-        descriptionStyle={'paragraphDescriptionWrapperReverse'}
+        imgStyle={paragraph.paragraphImgReverse}
+        descriptionStyle={paragraph.paragraphDescriptionWrapperReverse}
       />
       <CenteredParagraph />
       <Testimonials />

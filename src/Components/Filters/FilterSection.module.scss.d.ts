@@ -1298,6 +1298,7 @@ export const progressBar: string;
 export const progressBarAnimated: string;
 export const progressBarStriped: string;
 export const progressBarStripes: string;
+export const propertiesResults: string;
 export const prSm0: string;
 export const prSm1: string;
 export const prSm2: string;

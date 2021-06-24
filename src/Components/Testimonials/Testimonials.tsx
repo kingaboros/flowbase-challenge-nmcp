@@ -3,32 +3,34 @@ import HorizontalLine from '../HorizontalLine/HorizontalLine';
 
 import TestimonialCard from './TestimonialCard';
 
-import './Testimonials.scss';
+import * as classes from './Testimonials.module.scss';
+import * as testimonialCardStyle from './TestimonialCard.module.scss';
+import * as lineClasses from '../HorizontalLine/HorizontalLine.module.scss';
 
 const Testimonials = () => {
   return (
-    <div className="testimonials">
-      <div className="row"></div>
+    <div className={classes.testimonials}>
+      <div className={classes.row}></div>
 
-      <div className="row ">
-        <div className="col-md-4">
+      <div className={classes.row}>
+        <div className={classes.testimonialsColumn}>
           <TestimonialCard
-            textStyle={'testimonialCardText'}
-            testimonialStyle={'testimonialCardDescription'}
+            textStyle={testimonialCardStyle.testimonialCardText}
+            testimonialStyle={testimonialCardStyle.testimonialCardDescription}
           />
         </div>
 
-        <div className="col-md-4">
-          <HorizontalLine lineStyle={'horizontalLine'} />
+        <div className={classes.testimonialsColumn}>
+          <HorizontalLine lineStyle={lineClasses.horizontalLine} />
           <TestimonialCard
-            textStyle={'testimonialCardActive'}
-            testimonialStyle={'testimonialCardBlack'}
+            textStyle={testimonialCardStyle.testimonialCardActive}
+            testimonialStyle={testimonialCardStyle.testimonialCardBlack}
           />
         </div>
-        <div className="col-md-4">
+        <div className={classes.testimonialsColumn}>
           <TestimonialCard
-            textStyle={'testimonialCardText'}
-            testimonialStyle={'testimonialCardDescription'}
+            textStyle={testimonialCardStyle.testimonialCardText}
+            testimonialStyle={testimonialCardStyle.testimonialCardDescription}
           />
         </div>
       </div>
