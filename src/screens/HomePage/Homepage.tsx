@@ -12,7 +12,6 @@ import images from '../../themes/images';
 import * as paragraph from '../../components/Paragraph/Paragraph.module.scss';
 import { requestApiData } from '../../actions/actions';
 import { connect } from 'react-redux';
-import { updateReturn } from 'typescript';
 
 const Homepage = (props: any) => {
   useEffect(() => {
@@ -46,7 +45,6 @@ const Homepage = (props: any) => {
 };
 
 const mapStateToProps = (state: any) => {
-  console.log(state);
   return { rooms: state.rooms };
 };
 

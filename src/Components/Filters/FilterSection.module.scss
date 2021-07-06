@@ -52,7 +52,8 @@
 
 .propertiesResults {
   padding: 0;
-  margin-left: 0;
+  margin-left: 20px;
+
   @extend .row;
   @extend .col-12;
 }
@@ -103,7 +104,7 @@
     padding: 130px;
   }
   .propertiesResults {
-    margin-left: -50px;
+    margin-left: -5px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -128,6 +129,6 @@
     }
   }
   .propertiesResults {
-    margin-left: -110px;
+    margin-left: -50px;
   }
 }

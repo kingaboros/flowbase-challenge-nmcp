@@ -66,12 +66,6 @@ const FilterSection = (props: any) => {
           </div>
         </div>
         <div className={classes.row}>
-          <ArrowBtn
-            onClick={props.getProperties}
-            btnName={strings.buttons.filterBtn}
-            btnClass={buttonClasses.filterBtn}
-            arrowClass={buttonClasses.orangeArrow}
-          />
           <div className={classes.propertiesResults}>
             {props.rooms.map((property: any) => (
               <Properties key={property.id} {...property} />
