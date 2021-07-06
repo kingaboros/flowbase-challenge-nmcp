@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Paragraph from '../../components/Paragraph/Paragraph';
 import Header from '../../components/Header/Header';
 import Listings from '../../components/Listings/Listings';
@@ -10,9 +10,17 @@ import Footer from '../../components/Footer/Footer';
 import images from '../../themes/images';
 
 import * as paragraph from '../../components/Paragraph/Paragraph.module.scss';
-import Age from '../../components/age.js';
+import { requestApiData } from '../../actions/actions';
+import { connect } from 'react-redux';
+import { updateReturn } from 'typescript';
 
 const Homepage = (props: any) => {
+  useEffect(() => {
+    props.fetchData();
+  }, []);
+  useEffect(() => {
+    console.log(props.rooms);
+  }, [props]);
   return (
     <div>
       <Header />
@@ -23,7 +31,7 @@ const Homepage = (props: any) => {
         imgStyle={paragraph.paragraphImg}
         descriptionStyle={paragraph.paragraphDescriptionWrapper}
       />
-      <FilterSection />
+      <FilterSection rooms={props.rooms} getProperties={props.fetchData} />
       <Paragraph
         paragraphClass={paragraph.paragraphReverse}
         imgOrientation={images.paragraphImgReverse}
@@ -37,4 +45,15 @@ const Homepage = (props: any) => {
   );
 };
 
-export default Homepage;
+const mapStateToProps = (state: any) => {
+  console.log(state);
+  return { rooms: state.rooms };
+};
+
+const mapDispatchToProps = (dispatch: any) => {
+  return {
+    fetchData: () => dispatch(requestApiData()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Homepage);

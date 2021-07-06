@@ -5,13 +5,13 @@ import LookingForFilter from '../Filters/LookingForFilter';
 import LocationFilter from '../Filters/LocationFilter';
 import PropertyTypeFilter from '../Filters/PropertyTypeFilter';
 import PriceFilter from '../Filters/PriceFilter';
+import Properties from '../Properties/Properties';
+import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
 import * as classes from './FilterSection.module.scss';
 import * as headingClasses from '../Heading/Heading.module.scss';
 import * as buttonClasses from '../ArrowBtn/ArrowBtn.module.scss';
 import * as lineClasses from '../HorizontalLine/HorizontalLine.module.scss';
-
-import APICalls from '../../utils/APICalls';
 import strings from '../../themes/strings';
 
 const FilterSection = (props: any) => {
@@ -66,7 +66,17 @@ const FilterSection = (props: any) => {
           </div>
         </div>
         <div className={classes.row}>
-          <APICalls />
+          <ArrowBtn
+            onClick={props.getProperties}
+            btnName={strings.buttons.filterBtn}
+            btnClass={buttonClasses.filterBtn}
+            arrowClass={buttonClasses.orangeArrow}
+          />
+          <div className={classes.propertiesResults}>
+            {props.rooms.map((property: any) => (
+              <Properties key={property.id} {...property} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

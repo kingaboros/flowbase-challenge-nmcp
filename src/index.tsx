@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 
-import reducer from '../src/store/reducer';
+import reducer from '../src/reducers/data';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { watchAgeUp } from './sagas/saga';
+import mySaga from '../src/sagas/saga';
 import createSagaMiddleware from 'redux-saga';
 
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(reducer, applyMiddleware(sagaMiddleware));
 
-sagaMiddleware.run(watchAgeUp);
+sagaMiddleware.run(mySaga);
 
 ReactDOM.render(
   <Provider store={store}>
