@@ -11,11 +11,10 @@ const PriceFilter = (props: any) => {
     <div className={classes.filterWrapper}>
       <label>{strings.filterLabels.price}</label>
       <select value={props.selected} onChange={dropdownChangeHandler}>
-        <div>
-          {props.rooms.map((rooms: any) => (
-            <option>{rooms.price}</option>
-          ))}{' '}
-        </div>
+        <option value="blank">--------</option>
+        {props.rooms.map((rooms: any) => (
+          <option key={rooms.id}>{rooms.price}</option>
+        ))}
       </select>
     </div>
   );
