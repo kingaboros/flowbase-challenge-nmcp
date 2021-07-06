@@ -3,7 +3,7 @@ import { RECEIVE_API_DATA } from '../actions/actions';
 const initialState = {
   rooms: [],
 };
-export default (state = initialState, { type, data }) => {
+const dataReducer = (state = initialState, { type, data }) => {
   switch (type) {
     case RECEIVE_API_DATA:
       return { ...state, rooms: data };
@@ -11,3 +11,5 @@ export default (state = initialState, { type, data }) => {
       return state;
   }
 };
+
+export default dataReducer;

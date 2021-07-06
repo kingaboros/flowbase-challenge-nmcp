@@ -6,11 +6,9 @@ import LocationFilter from '../Filters/LocationFilter';
 import PropertyTypeFilter from '../Filters/PropertyTypeFilter';
 import PriceFilter from '../Filters/PriceFilter';
 import Properties from '../Properties/Properties';
-import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
 import * as classes from './FilterSection.module.scss';
 import * as headingClasses from '../Heading/Heading.module.scss';
-import * as buttonClasses from '../ArrowBtn/ArrowBtn.module.scss';
 import * as lineClasses from '../HorizontalLine/HorizontalLine.module.scss';
 import strings from '../../themes/strings';
 
