@@ -10,6 +10,7 @@ import Footer from '../../components/Footer/Footer';
 import images from '../../themes/images';
 
 import * as paragraph from '../../components/Paragraph/Paragraph.module.scss';
+import Age from '../../components/age.js';
 
 const Homepage = (props: any) => {
   return (
