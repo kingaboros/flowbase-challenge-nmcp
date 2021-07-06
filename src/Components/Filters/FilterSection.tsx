@@ -14,6 +14,9 @@ import * as buttonClasses from '../ArrowBtn/ArrowBtn.module.scss';
 import * as lineClasses from '../HorizontalLine/HorizontalLine.module.scss';
 import strings from '../../themes/strings';
 
+import { requestApiData } from '../../redux/actions/actions';
+import { connect } from 'react-redux';
+
 const FilterSection = (props: any) => {
   const [lookingFor, setLookingFor] = useState('All');
   const lookingForFilterHandler = (selectedLookingFor: any) => {
@@ -62,7 +65,11 @@ const FilterSection = (props: any) => {
             />
           </div>
           <div className={classes.filterControl}>
-            <PriceFilter selected={price} onChangeFilter={priceFilterHandler} />
+            <PriceFilter
+              selected={price}
+              onChangeFilter={priceFilterHandler}
+              rooms={props.rooms}
+            />
           </div>
         </div>
         <div className={classes.row}>
@@ -83,4 +90,8 @@ const FilterSection = (props: any) => {
   );
 };
 
-export default FilterSection;
+const mapStateToProps = (state: any) => {
+  return { rooms: state.rooms };
+};
+
+export default connect(mapStateToProps, null)(FilterSection);

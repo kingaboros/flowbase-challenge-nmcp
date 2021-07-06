@@ -12,9 +12,9 @@ const PriceFilter = (props: any) => {
       <label>{strings.filterLabels.price}</label>
       <select value={props.selected} onChange={dropdownChangeHandler}>
         <option value="blank">--------</option>
-        <option value="0-2000">$0-2000</option>
-        <option value="2000-10000">$2000-10000</option>
-        <option value="10000+">$10000+</option>
+        {props.rooms.map((rooms: any) => (
+          <option key={rooms.id}>{rooms.price}</option>
+        ))}
       </select>
     </div>
   );

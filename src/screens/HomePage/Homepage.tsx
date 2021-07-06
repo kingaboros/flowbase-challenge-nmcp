@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer';
 import images from '../../themes/images';
 
 import * as paragraph from '../../components/Paragraph/Paragraph.module.scss';
-import { requestApiData } from '../../actions/actions';
+import { requestApiData } from '../../redux/actions/actions';
 import { connect } from 'react-redux';
 import { updateReturn } from 'typescript';
 
@@ -31,7 +31,7 @@ const Homepage = (props: any) => {
         imgStyle={paragraph.paragraphImg}
         descriptionStyle={paragraph.paragraphDescriptionWrapper}
       />
-      <FilterSection rooms={props.rooms} getProperties={props.fetchData} />
+      <FilterSection />
       <Paragraph
         paragraphClass={paragraph.paragraphReverse}
         imgOrientation={images.paragraphImgReverse}
