@@ -27,7 +27,8 @@
   }
 
   & select {
-    padding: 5px 20px;
+    max-width: 150px;
+    padding: 5px 10px;
     font-weight: bold;
     border-radius: 6px;
   }
@@ -91,12 +92,13 @@
   }
   .filterControl {
     padding-left: 30px;
+
     & label {
       font-size: 14px;
     }
     & select {
       font-size: 14px;
-      margin-top: -5px;
+      margin-top: 0px;
     }
   }
   .filterSectionWrapper {
@@ -117,10 +119,11 @@
   }
   .filterControl {
     font-size: 20px;
-    padding: 15px;
+    padding: 30px;
 
     & label {
       font-size: 16px;
+      margin-top: 10px;
     }
 
     & select {

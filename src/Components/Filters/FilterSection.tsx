@@ -48,18 +48,21 @@ const FilterSection = (props: any) => {
             <LookingForFilter
               selected={lookingFor}
               onChangeFilter={lookingForFilterHandler}
+              rooms={props.rooms}
             />
           </div>
           <div className={classes.filterControl}>
             <LocationFilter
               selected={location}
               onChangeFilter={locationFilterHandler}
+              rooms={props.rooms}
             />
           </div>
           <div className={classes.filterControl}>
             <PropertyTypeFilter
               selected={propertyType}
               onChangeFilter={propertyTypeFilterHandler}
+              rooms={props.rooms}
             />
           </div>
           <div className={classes.filterControl}>

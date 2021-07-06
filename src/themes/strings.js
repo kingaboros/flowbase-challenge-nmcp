@@ -23,9 +23,9 @@ const strings = {
   },
   filterLabels: {
     location: 'Location',
-    looking: 'Looking for',
+    looking: 'Name',
     price: 'Price',
-    property: 'Property type',
+    property: 'Rooms',
   },
   testimonials: {
     testimonial1:

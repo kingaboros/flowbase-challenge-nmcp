@@ -12,10 +12,9 @@ const PropertyTypeFilter = (props: any) => {
       <label>{strings.filterLabels.property}</label>
       <select value={props.selected} onChange={dropdownChangeHandler}>
         <option value="blank">--------</option>
-        <option value="house">House</option>
-        <option value="flat">Flat</option>
-        <option value="holiday home">Holiday Home</option>
-        <option value="bungalow">Bungalow</option>
+        {props.rooms.map((rooms: any) => (
+          <option key={rooms.id}>{rooms.rooms.bedrooms}</option>
+        ))}
       </select>
     </div>
   );
