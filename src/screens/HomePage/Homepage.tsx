@@ -12,7 +12,6 @@ import images from '../../themes/images';
 import * as paragraph from '../../components/Paragraph/Paragraph.module.scss';
 import { requestApiData } from '../../redux/actions/actions';
 import { connect } from 'react-redux';
-import { updateReturn } from 'typescript';
 
 const Homepage = (props: any) => {
   useEffect(() => {
