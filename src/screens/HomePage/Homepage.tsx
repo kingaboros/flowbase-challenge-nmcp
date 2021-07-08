@@ -16,7 +16,7 @@ import { connect } from 'react-redux';
 const Homepage = (props: any) => {
   useEffect(() => {
     props.fetchData();
-  }, [props]);
+  }, []);
   useEffect(() => {}, []);
   return (
     <div>

@@ -12,7 +12,6 @@ import * as headingClasses from '../Heading/Heading.module.scss';
 import * as lineClasses from '../HorizontalLine/HorizontalLine.module.scss';
 import strings from '../../themes/strings';
 
-import { requestApiData } from '../../redux/actions/actions';
 import { connect } from 'react-redux';
 
 const FilterSection = (props: any) => {
@@ -33,6 +32,10 @@ const FilterSection = (props: any) => {
   const priceFilterHandler = (selectedPrice: any) => {
     setPrice(selectedPrice);
   };
+
+  const priceFilter = props.rooms.filter((res: any) => {
+    return res.price === price;
+  });
 
   return (
     <div className={classes.filterSectionWrapper}>
