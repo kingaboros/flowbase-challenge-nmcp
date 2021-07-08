@@ -580,6 +580,7 @@ export const listingsButton: string;
 export const listInline: string;
 export const listInlineItem: string;
 export const listUnstyled: string;
+export const loginBtn: string;
 export const m0: string;
 export const m1: string;
 export const m2: string;

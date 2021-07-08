@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../../Navbar/Navbar';
 import strings from '../../themes/strings';
 import * as classes from './Header.module.scss';
 
@@ -10,7 +10,6 @@ const Header = () => {
         <div className={classes.headerOverlay}>
           <div className={classes.row}>
             <div>
-              <Navbar />
               <div className={classes.headerHeadingWrapper}>
                 <h2 className={classes.headerHeading}>
                   {strings.headings.headerHeading}

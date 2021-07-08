@@ -47,6 +47,15 @@
   border-radius: 0 20px 0 0;
   @extend .btn-dark;
 }
+
+.loginBtn {
+  font-size: 18px;
+  padding: 15px;
+  background-color: $black;
+  margin-top: 20px;
+  border-radius: 0 20px 0 0;
+  @extend .btn-dark;
+}
 .centeredParagraphButton {
   @extend .navbarButton;
   @extend .btn-warning;
