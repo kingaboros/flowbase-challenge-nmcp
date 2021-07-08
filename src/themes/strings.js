@@ -4,7 +4,7 @@ const strings = {
     listingsBtn: 'See all listings',
     paragraphBtn: 'Learn more',
     footerBtn: 'Work with us',
-    filterBtn: 'Find more properties',
+    filterBtn: 'Filter Properties',
   },
   headings: {
     headerHeading: 'Beautiful homes made for you',

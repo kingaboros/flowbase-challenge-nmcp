@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';
 import Heading from '../Heading/Heading';
+import ArrowBtn from '../ArrowBtn/ArrowBtn';
+
 import LookingForFilter from '../Filters/LookingForFilter';
 import LocationFilter from '../Filters/LocationFilter';
 import PropertyTypeFilter from '../Filters/PropertyTypeFilter';
@@ -10,6 +12,7 @@ import Properties from '../Properties/Properties';
 import * as classes from './FilterSection.module.scss';
 import * as headingClasses from '../Heading/Heading.module.scss';
 import * as lineClasses from '../HorizontalLine/HorizontalLine.module.scss';
+import * as buttonClasses from '../ArrowBtn/ArrowBtn.module.scss';
 import strings from '../../themes/strings';
 
 import { connect } from 'react-redux';
@@ -77,6 +80,12 @@ const FilterSection = (props: any) => {
           </div>
         </div>
         <div className={classes.row}>
+          <ArrowBtn
+            onClick={props.getProperties}
+            btnName={strings.buttons.filterBtn}
+            btnClass={buttonClasses.filterBtn}
+            arrowClass={buttonClasses.orangeArrow}
+          />
           <div className={classes.propertiesResults}>
             {props.rooms.map((property: any) => (
               <Properties key={property.id} {...property} />
