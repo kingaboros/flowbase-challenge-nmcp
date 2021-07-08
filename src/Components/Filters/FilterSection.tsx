@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';
 import Heading from '../Heading/Heading';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
@@ -18,6 +18,10 @@ import strings from '../../themes/strings';
 import { connect } from 'react-redux';
 
 const FilterSection = (props: any) => {
+  const [properties, setProperties] = useState([]);
+
+  useEffect(() => {}, []);
+
   const [lookingFor, setLookingFor] = useState('All');
   const lookingForFilterHandler = (selectedLookingFor: any) => {
     setLookingFor(selectedLookingFor);
@@ -35,10 +39,6 @@ const FilterSection = (props: any) => {
   const priceFilterHandler = (selectedPrice: any) => {
     setPrice(selectedPrice);
   };
-
-  const priceFilter = props.rooms.filter((res: any) => {
-    return res.price === price;
-  });
 
   return (
     <div className={classes.filterSectionWrapper}>
@@ -81,7 +81,7 @@ const FilterSection = (props: any) => {
         </div>
         <div className={classes.row}>
           <ArrowBtn
-            onClick={props.getProperties}
+            onClick={props.filterProperties}
             btnName={strings.buttons.filterBtn}
             btnClass={buttonClasses.filterBtn}
             arrowClass={buttonClasses.orangeArrow}
