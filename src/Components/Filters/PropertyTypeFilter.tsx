@@ -24,7 +24,7 @@ const PropertyTypeFilter = (props: any) => {
     <div className={classes.filterWrapper}>
       <label>{strings.filterLabels.property}</label>
       <select value={props.selected} onChange={dropdownChangeHandler}>
-        <option value="blank">--------</option>
+        <option value="blank">Choose option</option>
         {rooms}
       </select>
     </div>

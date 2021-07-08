@@ -10,7 +10,7 @@ const LocationFilter = (props: any) => {
     <div className={classes.filterWrapper}>
       <label>{strings.filterLabels.location}</label>
       <select value={props.selected} onChange={dropdownChangeHandler}>
-        <option value="blank">--------</option>
+        <option value="blank">Choose option</option>
         {props.rooms.map((rooms: any) => (
           <option key={rooms.id}>{rooms.location}</option>
         ))}

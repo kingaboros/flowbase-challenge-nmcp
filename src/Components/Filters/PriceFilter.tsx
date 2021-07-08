@@ -22,7 +22,7 @@ const PriceFilter = (props: any) => {
     <div className={classes.filterWrapper}>
       <label>{strings.filterLabels.price}</label>
       <select value={props.selected} onChange={dropdownChangeHandler}>
-        <option value="blank">--------</option>
+        <option value="blank">Choose option</option>
         {prices}
       </select>
     </div>

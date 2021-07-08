@@ -23,7 +23,7 @@ const LookingForFilter = (props: any) => {
     <div className={classes.filterWrapper}>
       <label>{strings.filterLabels.looking}</label>
       <select value={props.selected} onChange={dropdownChangeHandler}>
-        <option value="blank">--------</option>
+        <option value="blank">Choose option</option>
         {names}
       </select>
     </div>
