@@ -5,6 +5,7 @@ const strings = {
     paragraphBtn: 'Learn more',
     footerBtn: 'Work with us',
     filterBtn: 'Filter Properties',
+    loginBtn: 'Login',
   },
   headings: {
     headerHeading: 'Beautiful homes made for you',

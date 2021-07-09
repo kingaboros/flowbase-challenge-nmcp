@@ -18,10 +18,6 @@ import strings from '../../themes/strings';
 import { connect } from 'react-redux';
 
 const FilterSection = (props: any) => {
-  const [properties, setProperties] = useState([]);
-
-  useEffect(() => {}, []);
-
   const [lookingFor, setLookingFor] = useState('All');
   const lookingForFilterHandler = (selectedLookingFor: any) => {
     setLookingFor(selectedLookingFor);

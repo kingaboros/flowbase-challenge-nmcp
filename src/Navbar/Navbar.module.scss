@@ -1,7 +1,8 @@
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 .navbar {
-  margin-top: 40px;
+  margin-top: 20px;
+
   @extend .navbar-expand-md;
   @extend .navbar-light;
   @extend .bg-transparent;

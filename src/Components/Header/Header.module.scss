@@ -10,6 +10,7 @@
   background-image: url('../../images/header-image.png');
   background-size: cover;
   width: 100%;
+  margin-top: -110px;
 }
 
 .headerOverlay {
@@ -21,6 +22,7 @@
 }
 .headerHeading .headerHeadingDescription {
   @extend .text-white;
+  margin-top: 100px;
 }
 
 .headerHeadingWrapper {
@@ -55,7 +57,7 @@
 
 @media only screen and (min-width: 1024px) {
   .headerHeadingWrapper {
-    margin: 10px 20px 0px 40px;
+    margin: 130px 20px 0px 40px;
     width: 100%;
     padding: 60px;
     font-size: 25px;
