@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { Form, Card } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 
 import * as classes from './Auth.module.scss';
@@ -7,38 +8,41 @@ import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
 import strings from '../../themes/strings';
 
-// import { authActions } from '../../store/auth.js';
-
 const Auth = () => {
-  // const dispatch = useDispatch();
-
-  // const loginHandler = (event: any) => {
-  //   event.preventDefault();
-
-  //   dispatch(authActions.login());
-  // };
-
+  const emailRef = useRef('');
+  const passwordRef = useRef('');
+  const passwordConfirmRef = useRef('');
   return (
     <div className={classes.loginWrapper}>
       <div className={classes.auth}>
-        <section>
-          {/* <form onSubmit={loginHandler}> */}
-          <form>
-            <div className={classes.control}>
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" />
-            </div>
-            <div className={classes.control}>
-              <label htmlFor="password">Password</label>
-              <input type="password" id="password" />
-            </div>
-            <ArrowBtn
-              btnName={strings.buttons.loginBtn}
-              btnClass={buttonClasses.loginBtn}
-              arrowClass={buttonClasses.orangeArrow}
-            />
-          </form>
-        </section>
+        <Card>
+          <Card.Body>
+            <h2 className={classes.heading}>Sign Up</h2>
+            <Form>
+              <Form.Group id="email">
+                <Form.Label>Email</Form.Label>
+                <Form.Control type="email" required />
+              </Form.Group>
+              <Form.Group id="password">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" required />
+              </Form.Group>
+              <Form.Group id="password-confirm">
+                <Form.Label>Password Confirmation</Form.Label>
+                <Form.Control type="password" required />
+              </Form.Group>
+              <ArrowBtn
+                btnName={strings.buttons.loginBtn}
+                btnClass={buttonClasses.loginBtn}
+                arrowClass={buttonClasses.orangeArrow}
+              />
+            </Form>
+          </Card.Body>
+          <h5 className={classes.formFooter}>
+            Already have an account?
+            <span className={classes.formFooterLink}> Log in here </span>
+          </h5>
+        </Card>
       </div>
     </div>
   );

@@ -54,6 +54,8 @@
   background-color: $black;
   margin-top: 20px;
   border-radius: 0 20px 0 0;
+  width: 20rem;
+
   @extend .btn-dark;
 }
 .centeredParagraphButton {
@@ -84,7 +86,7 @@
     font-size: 18px;
   }
   .buttonBtn {
-    margin-left: -10px;
+    margin-left: 0px;
   }
 
   .centeredParagraphButton {

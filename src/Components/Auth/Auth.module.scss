@@ -2,7 +2,7 @@
 @import '../../../node_modules//bootstrap/scss/bootstrap.scss';
 
 .loginWrapper {
-  padding-top: 120px;
+  padding-top: 40px;
 }
 .auth {
   margin: 5rem auto;
@@ -33,4 +33,24 @@
   border-radius: 4px;
   padding: 0.25rem;
   border: 1px solid $darkGrey;
+}
+
+.formFooter {
+  font-size: 16px;
+  font-weight: 400;
+
+  .formFooterLink {
+    font-weight: bold;
+  }
+}
+
+.heading {
+  @extend .mb-4;
+  @extend .text-center;
+}
+
+@media only screen and (min-width: 1440px) {
+  .loginWrapper {
+    padding-top: 120px;
+  }
 }
