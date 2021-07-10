@@ -1,10 +1,6 @@
 @import '../../themes/colors.scss';
 @import '../../../node_modules//bootstrap/scss/bootstrap.scss';
 
-.signupWrapper {
-  padding-top: 40px;
-}
-
 .auth {
   margin: 5rem auto;
   box-shadow: 0 1px 8px $shadowColor;
@@ -48,6 +44,14 @@
 .heading {
   @extend .mb-4;
   @extend .text-center;
+}
+
+.loginForm,
+.signupForm {
+  background: linear-gradient(0.26turn, $gradient1, $gradient2);
+  height: 100vh;
+  margin-top: -90px;
+  padding-top: 40px;
 }
 
 @media only screen and (min-width: 1440px) {

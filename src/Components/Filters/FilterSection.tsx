@@ -16,6 +16,7 @@ import * as buttonClasses from '../ArrowBtn/ArrowBtn.module.scss';
 import strings from '../../themes/strings';
 
 import { connect } from 'react-redux';
+import { AiOutlineConsoleSql } from 'react-icons/ai';
 
 const FilterSection = (props: any) => {
   const [lookingFor, setLookingFor] = useState('All');
@@ -94,7 +95,7 @@ const FilterSection = (props: any) => {
 };
 
 const mapStateToProps = (state: any) => {
-  return { rooms: state.rooms };
+  return { rooms: state.data.rooms };
 };
 
 export default connect(mapStateToProps, null)(FilterSection);

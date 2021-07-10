@@ -1,6 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import { Form, Card } from 'react-bootstrap';
-import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import * as classes from './Auth.module.scss';
@@ -10,11 +9,11 @@ import ArrowBtn from '../ArrowBtn/ArrowBtn';
 import strings from '../../themes/strings';
 
 const SignUp = () => {
-  const emailRef = useRef();
-  const passwordRef = useRef();
-  const passwordConfirmRef = useRef();
+  const [email, setEmail] = useState('');
+  const [pass, setPass] = useState('');
+  const signupHandler = (e: any) => {};
   return (
-    <div className={classes.signupWrapper}>
+    <div className={classes.signupForm}>
       <div className={classes.auth}>
         <Card>
           <Card.Body>
@@ -33,6 +32,7 @@ const SignUp = () => {
                 <Form.Control type="password" required />
               </Form.Group>
               <ArrowBtn
+                onClick={signupHandler}
                 btnName={strings.buttons.signupBtn}
                 btnClass={buttonClasses.loginBtn}
                 arrowClass={buttonClasses.orangeArrow}

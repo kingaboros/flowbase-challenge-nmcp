@@ -1,11 +1,11 @@
-import { RECEIVE_API_DATA } from '../actions/actions';
+import { REQUEST_API_DATA } from '../actions/actions';
 
 const initialState = {
   rooms: [],
 };
 const dataReducer = (state = initialState, { type, data }) => {
   switch (type) {
-    case RECEIVE_API_DATA:
+    case REQUEST_API_DATA:
       return { ...state, rooms: data };
     default:
       return state;

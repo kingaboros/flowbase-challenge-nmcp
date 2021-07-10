@@ -1,9 +1,8 @@
 import { combineReducers } from 'redux';
 import apiDataReducer from './dataReducer';
-
-import { firebaseReducer } from 'react-redux-firebase';
+import usersReducer from './usersReducer';
 
 export default combineReducers({
   data: apiDataReducer,
-  firebase: firebaseReducer,
+  users: usersReducer,
 });

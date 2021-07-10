@@ -4,8 +4,10 @@ import { Homepage, About } from './components';
 import './App.scss';
 
 import MyProfilePage from './screens/MyProfilePage/MyProfilePage';
-import LoginPage from './screens/LoginPage/LoginPage';
-import SignupPage from './screens/SignupPage/SignupPage';
+
+import LogIn from './components/Auth/LogIn';
+import SignUp from './components/Auth/SignUp';
+
 import NavBar from './Navbar/Navbar';
 
 const App = () => {
@@ -17,8 +19,8 @@ const App = () => {
           <Route exact path="/" component={Homepage} />
           <Route path="/about" component={About} />
           <Route path="/myprofile" component={MyProfilePage} />
-          <Route path="/signup" component={SignupPage} />
-          <Route path="/login" component={LoginPage} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/login" component={LogIn} />
         </Switch>
       </div>
     </Router>
