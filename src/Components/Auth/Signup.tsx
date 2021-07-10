@@ -1,61 +1,54 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Form, Card } from 'react-bootstrap';
-import ArrowBtn from '../ArrowBtn/ArrowBtn';
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import * as classes from './Auth.module.scss';
 import * as buttonClasses from '../ArrowBtn/ArrowBtn.module.scss';
+import ArrowBtn from '../ArrowBtn/ArrowBtn';
 
 import strings from '../../themes/strings';
 
-const Signup = () => {
+const SignUp = () => {
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const passwordConfirmRef = useRef();
   return (
-    <div>
-      {/* <Card>
-        <Card.Body>
-          <h2>Sign Up</h2>
-          <Form>
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" ref={emailRef} required />
-            </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" ref={passwordRef} required />
-            </Form.Group>
-            <Form.Group id="password-confirm">
-              <Form.Label>Password Confirmation</Form.Label>
-              <Form.Control type="password" ref={passwordConfirmRef} required />
-            </Form.Group>
-            <ArrowBtn
-              btnName={strings.buttons.loginBtn}
-              btnClass={buttonClasses.loginBtn}
-              arrowClass={buttonClasses.orangeArrow}
-            />
-          </Form>
-        </Card.Body>
-      </Card> */}
+    <div className={classes.signupWrapper}>
+      <div className={classes.auth}>
+        <Card>
+          <Card.Body>
+            <h2 className={classes.heading}>{strings.auth.signUpHeading}</h2>
+            <Form>
+              <Form.Group id="email">
+                <Form.Label>Email</Form.Label>
+                <Form.Control type="email" required />
+              </Form.Group>
+              <Form.Group id="password">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" required />
+              </Form.Group>
+              <Form.Group id="password-confirm">
+                <Form.Label>Password Confirmation</Form.Label>
+                <Form.Control type="password" required />
+              </Form.Group>
+              <ArrowBtn
+                btnName={strings.buttons.signupBtn}
+                btnClass={buttonClasses.loginBtn}
+                arrowClass={buttonClasses.orangeArrow}
+              />
+            </Form>
+          </Card.Body>
+          <h5 className={classes.formFooter}>
+            {strings.auth.haveAccount}
+            <Link to="/login" className={classes.formFooterLink}>
+              {strings.auth.login}
+            </Link>
+          </h5>
+        </Card>
+      </div>
     </div>
   );
 };
 
-export default Signup;
-
-{
-  /* <section>
-          <form>
-            <div className={classes.control}>
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" />
-            </div>
-            <div className={classes.control}>
-              <label htmlFor="password">Password</label>
-              <input type="password" id="password" />
-            </div>
-            <ArrowBtn
-              btnName={strings.buttons.loginBtn}
-              btnClass={buttonClasses.loginBtn}
-              arrowClass={buttonClasses.orangeArrow}
-            />
-          </form>
-        </section> */
-}
+export default SignUp;

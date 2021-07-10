@@ -5,7 +5,9 @@ const strings = {
     paragraphBtn: 'Learn more',
     footerBtn: 'Work with us',
     filterBtn: 'Filter Properties',
+    signupBtn: 'Sign Up',
     loginBtn: 'Login',
+    logOutBtn: 'Log Out',
   },
   headings: {
     headerHeading: 'Beautiful homes made for you',
@@ -14,6 +16,15 @@ const strings = {
     footerHeading: 'Make your dreams a',
     footerHeadingOrange: ' reality',
     footerColumnHeading: 'Column heading',
+  },
+  auth: {
+    signUpHeading: 'Sign Up',
+    logInHeading: 'Log In',
+    myProfileHeading: 'My Profile',
+    haveAccount: 'Already have an account?',
+    noAccount: `Don't have an account?`,
+    login: ' Log in here',
+    signup: ' Sign up now',
   },
   descriptions: {
     headerText:

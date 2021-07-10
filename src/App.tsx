@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Homepage, About, Contact } from './components';
+import { Homepage, About } from './components';
 import './App.scss';
 
-import { LoginPage } from './components';
+import MyProfilePage from './screens/MyProfilePage/MyProfilePage';
+import LoginPage from './screens/LoginPage/LoginPage';
+import SignupPage from './screens/SignupPage/SignupPage';
 import NavBar from './Navbar/Navbar';
 
 const App = () => {
@@ -12,9 +14,10 @@ const App = () => {
       <div className="App-layer">
         <NavBar />
         <Switch>
-          <Route path="/" exact component={Homepage} />
+          <Route exact path="/" component={Homepage} />
           <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/myprofile" component={MyProfilePage} />
+          <Route path="/signup" component={SignupPage} />
           <Route path="/login" component={LoginPage} />
         </Switch>
       </div>

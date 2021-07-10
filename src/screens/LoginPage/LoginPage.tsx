@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Auth from '../../components/Auth/Auth';
+import LogIn from '../../components/Auth/LogIn';
 
 import * as classes from './LoginPage.module.scss';
 
 const LoginPage = () => {
   return (
     <div className={classes.loginPage}>
-      <Auth />
+      <LogIn />
     </div>
   );
 };

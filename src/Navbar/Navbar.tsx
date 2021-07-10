@@ -30,18 +30,18 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="navMenuListItem">
-                <Link to="/about" className={classes.navMenuLink}>
-                  About
-                </Link>
-              </li>
-              <li className="navMenuListItem">
-                <Link to="/contact" className={classes.navMenuLink}>
-                  Contact
+                <Link to="/signup" className={classes.navMenuLink}>
+                  Sign Up
                 </Link>
               </li>
               <li className="navMenuListItem">
                 <Link to="/login" className={classes.navMenuLink}>
                   Login
+                </Link>
+              </li>
+              <li className="navMenuListItem">
+                <Link to="/myprofile" className={classes.navMenuLink}>
+                  My Profile
                 </Link>
               </li>
               <li className="navMenuListItem">
