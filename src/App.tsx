@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Homepage, About } from './components';
 import './App.scss';
 
-import MyProfilePage from './screens/MyProfilePage/MyProfilePage';
+import MyProfile from './components/Auth/MyProfile';
 
 import LogIn from './components/Auth/LogIn';
 import SignUp from './components/Auth/SignUp';
@@ -18,7 +18,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route path="/about" component={About} />
-          <Route path="/myprofile" component={MyProfilePage} />
+          <Route path="/myprofile" component={MyProfile} />
           <Route path="/signup" component={SignUp} />
           <Route path="/login" component={LogIn} />
         </Switch>

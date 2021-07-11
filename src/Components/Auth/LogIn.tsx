@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Form, Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Form, Card, Alert } from 'react-bootstrap';
+import { Link, Redirect } from 'react-router-dom';
 
 import { login } from '../../redux/actions/actions';
 import { connect } from 'react-redux';
@@ -21,6 +21,8 @@ interface IProps {
 const LogIn = (props: IProps) => {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const logInEmailHandler = (e: any) => {
     setEmail(e.target.value);
@@ -29,57 +31,69 @@ const LogIn = (props: IProps) => {
     setPass(e.target.value);
   };
 
-  const logInHandler = (e: any) => {
+  const submitHandler = async (e: any) => {
     e.preventDefault();
-    props.logIn(email, pass);
+
+    try {
+      setError('');
+      setLoading(true);
+      await props.logIn(email, pass);
+    } catch {
+      setError('Failed to log in');
+    }
+    setLoading(false);
   };
 
-  return (
-    <div className={classes.loginForm}>
-      <div className={classes.auth}>
-        <Card>
-          <Card.Body>
-            <h2 className={classes.heading}>{strings.auth.logInHeading}</h2>
-            <span> {props.error}</span>
-            <Form>
-              <Form.Group id="email">
-                <Form.Label>Email</Form.Label>
-                <Form.Control
-                  type="email"
-                  onChange={logInEmailHandler}
-                  required
-                />
-              </Form.Group>
-              <Form.Group id="password">
-                <Form.Label>Password</Form.Label>
-                <Form.Control
-                  type="password"
-                  onChange={logInPasswordHandler}
-                  required
-                />
-              </Form.Group>
+  if (props.user) return <Redirect to="/myprofile" />;
+  else
+    return (
+      <div className={classes.loginForm}>
+        <div className={classes.auth}>
+          <Card>
+            <Card.Body>
+              <h2 className={classes.heading}>{strings.auth.logInHeading}</h2>
+              {error && <Alert variant="danger">{error}</Alert>}
+              <span> {props.error}</span>
+              <Form onSubmit={submitHandler}>
+                <Form.Group id="email">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control
+                    type="email"
+                    onChange={logInEmailHandler}
+                    required
+                  />
+                </Form.Group>
+                <Form.Group id="password">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control
+                    type="password"
+                    onChange={logInPasswordHandler}
+                    required
+                  />
+                </Form.Group>
 
-              <ArrowBtn
-                onClick={logInHandler}
-                btnName={strings.buttons.loginBtn}
-                btnClass={buttonClasses.loginBtn}
-                arrowClass={buttonClasses.orangeArrow}
-              />
-            </Form>
-          </Card.Body>
-          <h5 className={classes.formFooter}>
-            {strings.auth.noAccount}
-            <Link to="/signup" className={classes.formFooterLink}>
-              {strings.auth.signup}
-            </Link>
-          </h5>
-        </Card>
+                <ArrowBtn
+                  disabled={loading}
+                  btnName={strings.buttons.loginBtn}
+                  btnClass={buttonClasses.loginBtn}
+                  arrowClass={buttonClasses.orangeArrow}
+                />
+              </Form>
+            </Card.Body>
+            <h5 className={classes.formFooter}>
+              {strings.auth.noAccount}
+              <Link to="/signup" className={classes.formFooterLink}>
+                {strings.auth.signup}
+              </Link>
+            </h5>
+          </Card>
+        </div>
       </div>
-    </div>
-  );
+    );
 };
 
 const mapStateToProps = (state: any) => {
+  console.log(state.users);
   const { error, login, user } = state.users;
   return { error, login, user };
 };

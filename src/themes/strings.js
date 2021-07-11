@@ -22,7 +22,7 @@ const strings = {
     logInHeading: 'Log In',
     myProfileHeading: 'My Profile',
     haveAccount: 'Already have an account?',
-    noAccount: `Don't have an account?`,
+    noAccount: 'Need an account?',
     login: ' Log in here',
     signup: ' Sign up now',
   },
