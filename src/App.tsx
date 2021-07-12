@@ -1,14 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Homepage, About } from './components';
-import './App.scss';
-
-import MyProfile from './components/Auth/MyProfile';
-
-import LogIn from './components/Auth/LogIn';
-import SignUp from './components/Auth/SignUp';
 
 import NavBar from './Navbar/Navbar';
+
+import SignUp from './components/Auth/SignUp';
+import LogIn from './components/Auth/LogIn';
+import ForgotPassword from './components/Auth/ForgotPassword';
+import MyProfile from './components/Auth/MyProfile';
+
+import './App.scss';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/myprofile" component={MyProfile} />
           <Route path="/signup" component={SignUp} />
           <Route path="/login" component={LogIn} />
+          <Route path="/forgot-password" component={ForgotPassword} />
         </Switch>
       </div>
     </Router>

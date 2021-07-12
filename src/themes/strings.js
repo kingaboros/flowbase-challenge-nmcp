@@ -8,6 +8,7 @@ const strings = {
     signupBtn: 'Sign Up',
     loginBtn: 'Login',
     logOutBtn: 'Log Out',
+    resetPassBtn: 'Reset Password',
   },
   headings: {
     headerHeading: 'Beautiful homes made for you',
@@ -20,9 +21,11 @@ const strings = {
   auth: {
     signUpHeading: 'Sign Up',
     logInHeading: 'Log In',
+    forgotPassHeading: 'Password Reset',
     myProfileHeading: 'My Profile',
     haveAccount: 'Already have an account?',
     noAccount: 'Need an account?',
+    forgotPass: 'Forgot password?',
     login: ' Log in here',
     signup: ' Sign up now',
   },

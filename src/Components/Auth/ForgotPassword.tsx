@@ -18,7 +18,7 @@ interface IProps {
   user: string;
 }
 
-const LogIn = (props: IProps) => {
+const ForgotPassword = (props: IProps) => {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
   const [error, setError] = useState('');
@@ -51,7 +51,9 @@ const LogIn = (props: IProps) => {
         <div className={classes.auth}>
           <Card>
             <Card.Body>
-              <h2 className={classes.heading}>{strings.auth.logInHeading}</h2>
+              <h2 className={classes.heading}>
+                {strings.auth.forgotPassHeading}
+              </h2>
               {error && <Alert variant="danger">{error}</Alert>}
               <span> {props.error}</span>
               <Form onSubmit={submitHandler}>
@@ -63,25 +65,17 @@ const LogIn = (props: IProps) => {
                     required
                   />
                 </Form.Group>
-                <Form.Group id="password">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control
-                    type="password"
-                    onChange={logInPasswordHandler}
-                    required
-                  />
-                </Form.Group>
 
                 <ArrowBtn
                   disabled={loading}
-                  btnName={strings.buttons.loginBtn}
+                  btnName={strings.buttons.resetPassBtn}
                   btnClass={buttonClasses.loginBtn}
                   arrowClass={buttonClasses.orangeArrow}
                 />
               </Form>
               <div className={classes.formFooter}>
-                <Link to="/forgot-password" className={classes.formFooterLink}>
-                  {strings.auth.forgotPass}
+                <Link to="/login" className={classes.formFooterLink}>
+                  {strings.auth.login}
                 </Link>
               </div>
             </Card.Body>
@@ -110,4 +104,4 @@ const mapDispatchToProps = (dispatch: any) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(LogIn);
+export default connect(mapStateToProps, mapDispatchToProps)(ForgotPassword);

@@ -10,6 +10,8 @@ export const LOGIN_SAGA = 'LOGIN_SAGA';
 export const LOGOUT_SAGA = 'LOGOUT_SAGA';
 export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
 export const LOGOUT_FAILED = 'LOGOUT_FAILED';
+export const RESET_PASS_SAGA = 'RESET_PASS_SAGA';
+export const RESET_PASS_SUCCESS = 'RESET_PASS_SUCCESS';
 
 export const requestApiData = () => ({ type: REQUEST_API_DATA_SAGA });
 
@@ -82,5 +84,18 @@ export function logOutFailed(state: any) {
   return {
     type: LOGOUT_FAILED,
     payload: null,
+  };
+}
+
+export function resetPass(email: string) {
+  return {
+    type: RESET_PASS_SAGA,
+    payload: { email },
+  };
+}
+export function forgotPassSuccess(email: string) {
+  return {
+    type: RESET_PASS_SUCCESS,
+    payload: { email },
   };
 }

@@ -4,6 +4,7 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAILED,
   LOGOUT_SUCCESS,
+  RESET_PASS_SUCCESS,
 } from '../actions/actions';
 
 const initialState = {
@@ -27,11 +28,14 @@ const usersReducer = (state = initialState, action) => {
         user: action.payload.uid,
         name: action.payload.name,
         email: action.payload.email,
+        error: action.payload.error.message,
       };
     case LOGIN_FAILED:
       return { ...state, error: action.error };
     case LOGOUT_SUCCESS:
       return initialState;
+    case RESET_PASS_SUCCESS:
+      return { ...state, email: action.payload.email };
 
     default:
       return state;

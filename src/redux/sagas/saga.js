@@ -12,6 +12,8 @@ import {
   LOGOUT_SAGA,
   logOutSuccess,
   logOutFailed,
+  resetPass,
+  RESET_PASS_SAGA,
 } from '../actions/actions';
 
 import fetchData from '../../utils/api';
@@ -71,12 +73,19 @@ function* logIn(action) {
 
 function* logOut(action) {
   try {
-    const payload = yield call([auth, auth.logOut], action.payload);
+    const payload = yield call(
+      [auth, auth.logOut],
+      action.payload.email,
+      action.payload.password
+    );
+    firestore.set({ email: action.payload.email });
     yield put(logOutSuccess(payload));
   } catch (error) {
     yield put(logOutFailed(error.message));
   }
 }
+
+// function* resetPass(action) {}
 
 export function* getApiSaga() {
   yield takeLatest(REQUEST_API_DATA_SAGA, getApiData);
@@ -91,4 +100,7 @@ export function* watchLogin() {
 
 export function* watchLogout() {
   yield takeLatest(LOGOUT_SAGA, logOut);
+}
+export function* watchResetPass() {
+  yield takeLatest(RESET_PASS_SAGA, resetPass);
 }
