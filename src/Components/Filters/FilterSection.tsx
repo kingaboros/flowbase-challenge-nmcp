@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import HorizontalLine from '../HorizontalLine/HorizontalLine';
 import Heading from '../Heading/Heading';
 import ArrowBtn from '../ArrowBtn/ArrowBtn';
@@ -16,7 +16,6 @@ import * as buttonClasses from '../ArrowBtn/ArrowBtn.module.scss';
 import strings from '../../themes/strings';
 
 import { connect } from 'react-redux';
-import { AiOutlineConsoleSql } from 'react-icons/ai';
 
 const FilterSection = (props: any) => {
   const [lookingFor, setLookingFor] = useState('All');

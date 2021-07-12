@@ -4,7 +4,7 @@ import { Homepage, About } from './components';
 
 import NavBar from './Navbar/Navbar';
 
-import SignUp from './components/Auth/SignUp';
+import SignUp from './components/Auth/Signup';
 import LogIn from './components/Auth/LogIn';
 import ForgotPassword from './components/Auth/ForgotPassword';
 import MyProfile from './components/Auth/MyProfile';

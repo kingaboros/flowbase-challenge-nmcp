@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../../Navbar/Navbar';
 import strings from '../../themes/strings';
 import * as classes from './Header.module.scss';
 

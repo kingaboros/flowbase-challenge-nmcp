@@ -27,9 +27,6 @@ const ForgotPassword = (props: IProps) => {
   const logInEmailHandler = (e: any) => {
     setEmail(e.target.value);
   };
-  const logInPasswordHandler = (e: any) => {
-    setPass(e.target.value);
-  };
 
   const submitHandler = async (e: any) => {
     e.preventDefault();
