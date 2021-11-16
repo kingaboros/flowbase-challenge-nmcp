@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ArrowBtn from '../components/ArrowBtn/ArrowBtn';
+
 import strings from '../themes/strings';
 import images from '../themes/images';
 
